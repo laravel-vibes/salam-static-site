@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book an Appointment | The Gentle Guardian</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-dim": "#375768",
+                        "surface-bright": "#fbf9f6",
+                        "surface-tint": "#216775",
+                        "on-tertiary-fixed": "#504235",
+                        "primary": "#216775",
+                        "secondary-container": "#c5e7fc",
+                        "on-primary-fixed-variant": "#1c6472",
+                        "inverse-primary": "#acedfd",
+                        "surface": "#fbf9f6",
+                        "on-surface-variant": "#5e5f5c",
+                        "on-tertiary-container": "#645446",
+                        "error-dim": "#67040d",
+                        "outline-variant": "#b2b2ae",
+                        "on-primary": "#eefbff",
+                        "inverse-on-surface": "#9e9d9a",
+                        "on-primary-container": "#0b5a68",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#313330",
+                        "secondary": "#436374",
+                        "tertiary-container": "#fee7d5",
+                        "background": "#fbf9f6",
+                        "primary-dim": "#0e5b69",
+                        "surface-container-high": "#e9e8e4",
+                        "outline": "#7a7b77",
+                        "error": "#a83836",
+                        "secondary-fixed": "#c5e7fc",
+                        "inverse-surface": "#0e0e0d",
+                        "tertiary": "#6c5c4e",
+                        "on-surface": "#313330",
+                        "on-primary-fixed": "#004652",
+                        "on-tertiary-fixed-variant": "#6e5e50",
+                        "primary-container": "#acedfd",
+                        "secondary-fixed-dim": "#b7d9ed",
+                        "tertiary-fixed-dim": "#efd9c7",
+                        "on-secondary-fixed": "#224353",
+                        "surface-variant": "#e3e3de",
+                        "surface-dim": "#dadad6",
+                        "on-secondary": "#f3faff",
+                        "surface-container-highest": "#e3e3de",
+                        "surface-container-low": "#f5f3f0",
+                        "primary-fixed-dim": "#9edfef",
+                        "surface-container": "#efeeea",
+                        "on-error": "#fff7f6",
+                        "tertiary-dim": "#605043",
+                        "on-secondary-container": "#355667",
+                        "on-tertiary": "#fff7f4",
+                        "error-container": "#fa746f",
+                        "primary-fixed": "#acedfd",
+                        "on-secondary-fixed-variant": "#3f6071",
+                        "on-error-container": "#6e0a12",
+                        "tertiary-fixed": "#fee7d5"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .asymmetric-bleed {
+            margin-right: -10%;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/70 dark:bg-[#1a1c1e]/70 backdrop-blur-xl shadow-sm dark:shadow-none transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-[#216775] dark:text-[#5E9EAD] uppercase tracking-widest font-manrope">
+                The Gentle Guardian
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-manrope font-semibold tracking-tight">
+<a class="text-[#444746] dark:text-[#c4c7c5] hover:text-[#216775] transition-opacity duration-400" href="#">Home</a>
+<a class="text-[#444746] dark:text-[#c4c7c5] hover:text-[#216775] transition-opacity duration-400" href="#">Services</a>
+<a class="text-[#444746] dark:text-[#c4c7c5] hover:text-[#216775] transition-opacity duration-400" href="#">Fertility</a>
+<a class="text-[#216775] dark:text-[#5E9EAD] border-b-2 border-[#216775] pb-1" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-semibold hover:opacity-80 transition-all active:scale-95 duration-400 ease-in-out">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 mb-20">
+<div class="grid md:grid-cols-2 gap-12 items-end">
+<div>
+<span class="text-primary font-bold tracking-[0.2em] text-[0.75rem] uppercase mb-4 block">Begin Your Journey</span>
+<h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-on-background leading-[1.1] mb-6">
+                        Compassionate care <br/>starts with a <span class="text-primary">conversation.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed">
+                        Whether you're seeking fertility guidance or general wellness, our doors are open to support your unique health path.
+                    </p>
+</div>
+<div class="hidden md:flex justify-end">
+<div class="bg-primary-container/20 p-8 rounded-full flex flex-col items-center justify-center aspect-square w-48 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">calendar_month</span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-primary-container">Next Available: Tomorrow</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Interaction Section: Bento-style Grid -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Appointment Form Card -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-[2rem] p-8 md:p-12">
+<h2 class="text-3xl font-bold mb-8">Request an Appointment</h2>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 focus:bg-surface-container-lowest transition-all" placeholder="Sarah Johnson" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Phone Number</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 focus:bg-surface-container-lowest transition-all" placeholder="+973 XXXX XXXX" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 focus:bg-surface-container-lowest transition-all" placeholder="sarah@example.com" type="email"/>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Service Type</label>
+<select class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 focus:bg-surface-container-lowest transition-all appearance-none">
+<option>Fertility Consultation</option>
+<option>Women's Wellness Exam</option>
+<option>Maternity Care</option>
+<option>Diagnostic Screening</option>
+<option>Other Inquiry</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Preferred Date</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 focus:bg-surface-container-lowest transition-all" type="date"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant px-1">Additional Message (Optional)</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30 focus:bg-surface-container-lowest transition-all" placeholder="How can we help you today?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-full font-bold text-lg hover:opacity-90 transition-all flex justify-center items-center gap-2 group" type="submit">
+                            Submit Request
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Info Column -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Location Card -->
+<div class="bg-surface-container rounded-[2rem] overflow-hidden group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Map showing medical center location in Manama Bahrain" data-location="Manama" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9D-CuWUtCDEOokLjbterUT1xYYY2cdmPWejTAFlvs-atmdEGlyefTTQgrBuONiqLlH2EOkcI75ZTGPnfsuAQyCqjmnYoiQKUcVgVZFyy42do0nKIcLJORAiVt0J7_h_I6VC1mpmKsFiLgAqnj6bfgE7E3ZqYX3Xx9LHxOX7ncHY-Hrvpi6tWQS_s9ETDdYzRX746LmWi1b4A0bzIUw5gTyxjalJf6ug8rl3PhH5W7c0I4DYizMxpjVBIrHfMXyzty3HVL4W84N0I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent"></div>
+</div>
+<div class="p-8 pt-0 -mt-12 relative z-10">
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+<h3 class="font-bold text-xl mb-2">Bahrain Medical Center</h3>
+<p class="text-on-surface-variant mb-4">Seef District, Building 452, Road 28, Manama, Kingdom of Bahrain</p>
+<a class="text-primary font-bold flex items-center gap-2 text-sm underline underline-offset-4 decoration-2" href="#">
+<span class="material-symbols-outlined text-base">directions</span>
+                                    Get Directions
+                                </a>
+</div>
+</div>
+</div>
+<!-- Hours & Emergency -->
+<div class="bg-secondary-container/30 rounded-[2rem] p-8">
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-secondary-container p-2 rounded-lg">
+<span class="material-symbols-outlined text-on-secondary-container">schedule</span>
+</div>
+<h3 class="font-bold text-xl">Clinic Hours</h3>
+</div>
+<ul class="space-y-4 text-sm">
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant">Sunday – Wednesday</span>
+<span class="font-bold">08:00 AM – 08:00 PM</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant">Thursday</span>
+<span class="font-bold">08:00 AM – 05:00 PM</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant">Friday</span>
+<span class="font-bold text-error">Closed</span>
+</li>
+<li class="flex justify-between pb-2">
+<span class="text-on-surface-variant">Saturday</span>
+<span class="font-bold">09:00 AM – 02:00 PM</span>
+</li>
+</ul>
+<div class="mt-8 pt-6 border-t border-secondary-container">
+<div class="bg-error-container/20 p-4 rounded-xl flex items-start gap-4">
+<span class="material-symbols-outlined text-error mt-1" style="font-variation-settings: 'FILL' 1;">emergency</span>
+<div>
+<p class="font-bold text-error text-sm uppercase tracking-wider mb-1">Emergency After-Hours</p>
+<p class="text-on-surface text-lg font-extrabold">+973 17XX XXXX</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What to Expect Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="asymmetric-bleed rounded-[3rem] overflow-hidden aspect-[4/5] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Friendly doctor welcoming patient in a warm clinic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrzqMcJzJDlFLGqb_qKu_2n_0SYjD-Pwqt__oI1-i2m7o5CACFe4RZtBue03P_2_tphIYdScBI71jqM7rFD9kA_wh5OZ1oTOp-a9ogjylsYP12CB5wRH9zpdP1ktBYV6GXytZ95EaH4uz4H8dqgoJ0iFFSJafcTTdaalyTffBgK5fau7ldb_iFU2vJ8zDhHeZ_yq9gLCrnIGjgUqykd0r5RWHjy2Yjdt002vzRT96CKQyiiTqff9KcGB5sS38UhbBvF63PJ4nCDXE"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-[2rem] shadow-xl max-w-xs hidden md:block">
+<p class="font-manrope italic text-lg leading-relaxed text-on-surface-variant">
+                            "Our goal is to make your first visit as peaceful and informative as possible."
+                        </p>
+<p class="mt-4 font-bold text-primary">— Dr. Amina Al-Sayed</p>
+</div>
+</div>
+<div class="py-12">
+<h2 class="text-4xl font-bold mb-10 tracking-tight">What to Expect <span class="block text-primary">On Your First Visit</span></h2>
+<div class="space-y-12 relative">
+<!-- Care Timeline -->
+<div class="absolute left-6 top-2 bottom-2 w-px bg-primary/10"></div>
+<div class="flex gap-8 relative">
+<div class="z-10 bg-primary-container text-primary w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold ring-8 ring-surface">01</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Warm Welcome</h4>
+<p class="text-on-surface-variant leading-relaxed">Arrive 15 minutes early to enjoy a calming tea and complete our simplified digital wellness questionnaire in our lounge.</p>
+</div>
+</div>
+<div class="flex gap-8 relative">
+<div class="z-10 bg-primary-container text-primary w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold ring-8 ring-surface">02</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Clinical Consultation</h4>
+<p class="text-on-surface-variant leading-relaxed">Meet your specialist for a comprehensive 45-minute discussion focusing on your history, concerns, and goals.</p>
+</div>
+</div>
+<div class="flex gap-8 relative">
+<div class="z-10 bg-primary-container text-primary w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold ring-8 ring-surface">03</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Personalized Roadmap</h4>
+<p class="text-on-surface-variant leading-relaxed">Before you leave, you'll receive a clear diagnostic plan or care roadmap tailored specifically to your body's needs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Cards -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-8 rounded-3xl text-center group hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">call</span>
+<h3 class="font-bold text-lg mb-2">Call Us</h3>
+<p class="text-on-surface-variant mb-4 text-sm">Direct medical assistance</p>
+<p class="text-xl font-bold text-on-background">+973 1700 0000</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-3xl text-center group hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">mail</span>
+<h3 class="font-bold text-lg mb-2">Email Inquiries</h3>
+<p class="text-on-surface-variant mb-4 text-sm">Non-urgent questions</p>
+<p class="text-xl font-bold text-on-background">care@thegentleguardian.bh</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-3xl text-center group hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">share</span>
+<h3 class="font-bold text-lg mb-2">Social Connection</h3>
+<p class="text-on-surface-variant mb-4 text-sm">Health tips &amp; community</p>
+<div class="flex justify-center gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">IG</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">FB</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">LI</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] dark:bg-[#111314] w-full pt-16 pb-8 font-manrope text-sm leading-relaxed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-lg font-bold text-[#216775] dark:text-[#5E9EAD]">The Gentle Guardian</div>
+<p class="text-[#444746] dark:text-[#c4c7c5]">Advanced fertility and women's healthcare center providing personalized care with a gentle touch.</p>
+</div>
+<div>
+<h4 class="font-bold text-[#216775] mb-6 uppercase tracking-wider text-xs">Patient Resources</h4>
+<ul class="space-y-3">
+<li><a class="text-[#444746] dark:text-[#c4c7c5] hover:underline decoration-2 underline-offset-4" href="#">Patient Portal</a></li>
+<li><a class="text-[#444746] dark:text-[#c4c7c5] hover:underline decoration-2 underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="text-[#444746] dark:text-[#c4c7c5] hover:underline decoration-2 underline-offset-4" href="#">Emergency Care</a></li>
+<li><a class="text-[#444746] dark:text-[#c4c7c5] hover:underline decoration-2 underline-offset-4" href="#">Insurance Partners</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#216775] mb-6 uppercase tracking-wider text-xs">Connect</h4>
+<ul class="space-y-3">
+<li><a class="text-[#444746] dark:text-[#c4c7c5] hover:underline decoration-2 underline-offset-4" href="#">Careers</a></li>
+<li><a class="text-[#444746] dark:text-[#c4c7c5] hover:underline decoration-2 underline-offset-4" href="#">News &amp; Blogs</a></li>
+<li><a class="text-[#444746] dark:text-[#c4c7c5] hover:underline decoration-2 underline-offset-4" href="#">Instagram</a></li>
+<li><a class="text-[#444746] dark:text-[#c4c7c5] hover:underline decoration-2 underline-offset-4" href="#">LinkedIn</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#216775] mb-6 uppercase tracking-wider text-xs">Newsletter</h4>
+<p class="text-[#444746] dark:text-[#c4c7c5] mb-4">Stay updated with health insights from our specialists.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-high border-none rounded-lg p-3 w-full text-xs" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-4 rounded-lg">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10 text-center md:text-left">
+<p class="text-[#444746] dark:text-[#c4c7c5] text-xs">© 2024 The Gentle Guardian Medical Center, Bahrain. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

@@ -1,12 +1,12 @@
-baseURL: https://example.docsy.dev
-title: Goldydocs
+baseURL: https://www.salamjibrel.com
+title: Dr Salam Jibrel Medical Center
 
-# cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu slugorcontentbasename
+# cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom slugorcontentbasename
 
 # Language settings
 contentDir: content/en
 defaultContentLanguage: en
-defaultContentLanguageInSubdir: false
+defaultContentLanguageInSubdir: true
 # Useful when translating.
 enableMissingTranslationPlaceholders: true
 
@@ -57,28 +57,20 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Goldydocs
+    title: Dr Salam Jibrel Medical Center
+    weight: 1
     params:
-      description: A Docsy example site
-  # cSpell:disable
-  no:
-    languageName: Norsk
-    contentDir: content/no
-    title: Gulldoks
+      description: Leading Fertility & IVF Center in Bahrain
+  ar:
+    languageDirection: rtl
+    languageName: 'العربية'
+    contentDir: content/ar
+    title: 'مركز د. سلام جبريل الطبي'
+    weight: 2
     params:
-      description: Docsy er operativsystem for skyen
+      description: 'مركز رائد للخصوبة وأطفال الأنابيب في البحرين'
       time_format_default: 02.01.2006
       time_format_blog: 02.01.2006
-  fa:
-    languageDirection: rtl
-    languageName: 'فارسی (Persian)'
-    contentDir: content/fa
-    title: 'اسناد گلدی'
-    params:
-      description: 'یک نمونه برای پوسته داکسی'
-      time_format_default: 2006.01.02
-      time_format_blog: 2006.01.02
-  # cSpell:enable
 
 markup:
   goldmark:
@@ -112,54 +104,20 @@ params:
     # set taxonomyPageHeader = [] to hide taxonomies on the page headers
     taxonomyPageHeader: [tags, categories]
 
-  privacy_policy: https://policies.google.com/privacy
+  privacy_policy: /privacy/
 
   # First one is picked as the Twitter card image if not set on page.
   # images: [images/project-illustration.png]
 
-  # Menu title if your navbar has a versions selector to access old versions of your site.
-  # This menu appears only if you have at least one [params.versions] set.
-  version_menu: Releases
-
-  # Flag used in the "version-banner" partial to decide whether to display a
-  # banner on every page indicating that this is an archived version of the docs.
-  # Set this flag to "true" if you want to display the banner.
-  archived_version: false
-
-  # The version number for the version of the docs represented in this doc set.
-  # Used in the "version-banner" partial to display a version number for the
-  # current doc set.
-  version: 0.14.4-dev
-
-  # Internal version number with build ID.
-  versionWithBuildId: 0.14.4-dev
-
-  # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/google/docsy-example
-
-  # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/google/docsy
-
-  # Specify a value here if your content directory is not in your repo's root directory
-  # github_subdir: ""
-
-  # Uncomment this if your GitHub repo does not have "main" as the default branch,
-  # or specify a new value if you want to reference another branch in your GitHub links
-  github_branch: main
-
-  # Google Custom Search Engine ID. Remove or comment out to disable search.
-  gcs_engine_id: d72aa9b2712488cc3
-
   # Enable Lunr.js offline search
-  offlineSearch: false
+  offlineSearch: true
 
   # Enable syntax highlighting and copy buttons on code blocks with Prism
   prism_syntax_highlighting: false
 
   copyright:
-    authors: >-
-      Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
-    from_year: 2018
+    authors: Dr Salam Jibrel Medical Center
+    from_year: 2025
     to_year: present
 
   # User interface configuration
@@ -184,60 +142,40 @@ params:
     # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
     # add "hide_feedback: true" to the page's front matter.
     feedback:
-      enable: true
-      # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-      yes: >-
-        Glad to hear it! Please <a
-        href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we
-        can improve</a>.
-      no: >-
-        Sorry to hear that. Please <a
-        href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we
-        can improve</a>.
+      enable: false
 
     # Adds a reading time to the top of each doc.
     # If you want this feature, but occasionally need to remove the Reading time from a single page,
     # add "hide_readingtime: true" to the page's front matter
     readingtime:
       enable: false
-  mainBranchPreviewURL: https://main--goldydocs.netlify.app/
   # Docs helpers: use with _param
   btn-lg: class="btn btn-lg btn-{1}" role="button"
   FA: <i class="fa-{1} fa-{2} text-{3} px-1"></i>
 
   links:
-    # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
-      - name: User mailing list
-        url: https://example.org/mail
+      - name: Phone
+        url: "tel:+97317000000"
+        icon: fa fa-phone
+        desc: Call us for appointments
+      - name: Email
+        url: "mailto:info@salamjibrel.com"
         icon: fa fa-envelope
-        desc: Discussion and help from your fellow users
-      - name: X
-        url: https://example.org/x
-        icon: fab fa-x-twitter
-        desc: Follow us on X to get the latest news!
-      - name: Stack Overflow
-        url: https://example.org/stack
-        icon: fab fa-stack-overflow
-        desc: Practical questions and curated answers
-    # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+        desc: Email us for inquiries
+      - name: Location
+        url: "https://maps.google.com"
+        icon: fa fa-map-marker-alt
+        desc: Find us in Bahrain
     developer:
-      - name: Site info
-        url: /site/
-        icon: fa-solid fa-hammer
-        desc: Site build information.
-      - name: GitHub
-        url: https://github.com/google/docsy
-        icon: fab fa-github
-        desc: Development takes place here!
-      - name: Slack
-        url: https://example.org/slack
-        icon: fab fa-slack
-        desc: Chat with other project developers
-      - name: Developer mailing list
-        url: https://example.org/mail
-        icon: fa fa-envelope
-        desc: Discuss development issues around the project
+      - name: Instagram
+        url: "https://instagram.com"
+        icon: fab fa-instagram
+        desc: Follow us on Instagram
+      - name: WhatsApp
+        url: "https://wa.me/97317000000"
+        icon: fab fa-whatsapp
+        desc: Message us on WhatsApp
 
 security:
   funcs: # cspell:disable-line

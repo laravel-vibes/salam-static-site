@@ -1,36 +1,25 @@
 ---
-title: Goldydocs
-description: Porridge temperature assessment &mdash; in the cloud!
+title: Dr Salam Jibrel Medical Center
+description: Leading Fertility & IVF Center in Bahrain
 params:
   body_class: td-navbar-links-all-active
 ---
 
 {{% blocks/cover
-  title="Welcome to Goldydocs: A Docsy Example and Starter Project!"
+  title="Dr Salam Jibrel Medical Center"
   height="full td-below-navbar"
-  image_anchor="top"
+  image_anchor="center"
 %}}
 
-<!--
-  Want a cover without an image?
-  Add the following argument to the blocks/cover shortcode:
-    color="primary bg-gradient td-below-navbar"
--->
-
-<!-- prettier-ignore -->
-{{% _param description %}}
+Leading Fertility & IVF Center in Bahrain
 {.display-6}
 
-<!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
-  <a {{% _param btn-lg primary %}} href="docs/">
-    Learn more
+  <a {{% _param btn-lg primary %}} href="services/">
+    Our Services
   </a>
-  <a {{% _param btn-lg secondary %}}
-    href="{{% param github_repo %}}"
-    target="_blank" rel="noopener noreferrer">
-    Get the code
-    {{% _param FA brands github "" %}}
+  <a {{% _param btn-lg secondary %}} href="about/">
+    About Us
   </a>
 </div>
 
@@ -40,54 +29,89 @@ params:
 
 {{% blocks/lead color="white" %}}
 
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+## Welcome to Dr Salam Jibrel Medical Center
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
+We are a leading fertility and reproductive medicine center in the Kingdom of Bahrain,
+dedicated to helping families achieve their dreams of parenthood. With state-of-the-art
+technology and compassionate care, we provide comprehensive fertility treatments
+tailored to each patient's unique needs.
 
 {{% /blocks/lead %}}
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature title="New chair metrics!" icon="fa-lightbulb" %}}
+{{% blocks/feature title="IVF & ICSI" icon="fa-solid fa-baby" %}}
 
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
-
-{{% /blocks/feature %}}
-
-{{% blocks/feature
-  title="Contributions welcome!" icon="fab fa-github"
-  url="https://github.com/google/docsy-example"
-%}}
-
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
+Advanced In Vitro Fertilization and Intracytoplasmic Sperm Injection
+treatments with high success rates.
 
 {{% /blocks/feature %}}
 
-{{% blocks/feature
-  title="Follow us on X!" icon="fab fa-x-twitter"
-  url="https://x.com/docsydocs"
-%}}
+{{% blocks/feature title="Fertility Assessment" icon="fa-solid fa-stethoscope" %}}
 
-For announcement of latest features etc.
+Comprehensive fertility evaluation for both men and women,
+including hormonal testing and diagnostic imaging.
+
+{{% /blocks/feature %}}
+
+{{% blocks/feature title="Gynecology" icon="fa-solid fa-heart-pulse" %}}
+
+Full range of gynecological services including routine check-ups,
+prenatal care, and minimally invasive surgery.
 
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="white" type="row text-center h1" %}}
+{{% blocks/section color="white" type="row" %}}
 
-This is the second section
+<div class="col-md-6">
+
+## Why Choose Us?
+
+With over 20 years of experience in reproductive medicine, Dr. Salam Jibrel and the
+team are committed to providing the highest standard of care. Our center combines
+cutting-edge technology with a warm, supportive environment.
+
+- State-of-the-art IVF laboratory
+- Personalized treatment plans
+- Multilingual team (Arabic & English)
+- Compassionate, patient-centered care
+
+</div>
+<div class="col-md-6 text-center">
+<img src="/images/happy-couple.jpg" alt="Happy couple" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+</div>
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="secondary" type="row text-center h1" %}}
+{{% blocks/section color="secondary" type="row" %}}
 
-This is the another section with center alignment
+<div class="col-md-6 text-center">
+<img src="/images/mother-newborn.jpg" alt="Mother with newborn" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+</div>
+<div class="col-md-6">
+
+## Your Journey to Parenthood
+
+Every family's story is unique. From your first consultation through to the joyful moment
+you hold your baby, we are with you at every step. Our team provides not just
+medical expertise, but emotional support and guidance throughout your fertility journey.
+
+</div>
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="white" type="row text-center" %}}
+
+## Book an Appointment
+
+Contact us today to schedule a consultation and take the first step on your journey to parenthood.
+
+<div class="td-cta-buttons my-3">
+  <a {{% _param btn-lg primary %}} href="contact/">
+    Contact Us
+  </a>
+</div>
 
 {{% /blocks/section %}}

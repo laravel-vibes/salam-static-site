@@ -1,9 +1,8 @@
 ---
-title: Blog
-aliases: [/blog/2018/*]
-menu: { main: { weight: 30 } }
+title: News & Updates
+linkTitle: News
+menu: {main: {weight: 35}}
 ---
 
-This is the **blog** section. It has two categories: News and Releases.
-
-Files in these directories will be listed in reverse chronological order.
+Stay up to date with the latest news, medical insights, and updates from
+Dr Salam Jibrel Medical Center.

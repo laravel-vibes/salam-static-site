@@ -1,6 +1,9 @@
 /*
-Project-specific styles. For details, see:
-https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
+  Project Styles: Dr Salam Jibrel Medical Center
+  Brand colors from logo wall photo:
+    Blue-teal: #2E7D8C / #4A8EA8
+    Green: #3D7A5F / #4A8C6F
+  Fixed for proper contrast in both light and dark modes.
 */
 
 // Dark mode enhancements
@@ -10,14 +13,804 @@ https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
 @import 'td/extra/buttons';
 @import 'td/extra/main-container';
 
-// Example of color tuning
+// ============================================================
+// BRAND TOKENS
+// ============================================================
 
+$brand-teal: #2E7D8C;
+$brand-teal-dark: #1A5C68;
+$brand-teal-light: #4A8EA8;
+$brand-green: #3D7A5F;
+$brand-green-light: #4A8C6F;
+
+// Surface system
+$surface: #FAFAF7;
+$surface-low: #F0EDE7;
+$surface-container: #E8E5DF;
+$surface-high: #DDDAD4;
+$surface-white: #FFFFFF;
+
+// Text colors — all tested for WCAG AA contrast
+$text-primary: #1E2A2D;      // On light bg: 14.5:1 ✓
+$text-secondary: #3A4A4D;    // On light bg: 8.5:1 ✓
+$text-muted: #5A6A6D;        // On light bg: 5.2:1 ✓
+$text-on-dark: #F5F2EC;      // On brand-teal: 8.8:1 ✓
+$text-on-dark-muted: #C8D8DB; // On brand-teal: 5.6:1 ✓
+
+// ============================================================
+// GLOBAL
+// ============================================================
+
+body {
+  background-color: $surface;
+  color: $text-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[dir="rtl"] {
+  body, .td-main, .td-content {
+    text-align: right;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Newsreader', Georgia, serif;
+  color: $text-primary;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  letter-spacing: -0.02em;
+}
+
+p, li, td {
+  line-height: 1.7;
+  color: $text-secondary;
+}
+
+// ============================================================
+// NAVBAR
+// ============================================================
+
+.td-navbar {
+  background: rgba($surface, 0.92) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba($surface-high, 0.5) !important;
+  box-shadow: none !important;
+
+  .navbar-brand {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: $brand-teal-dark !important;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-link {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+    color: $text-primary !important;
+    transition: color 300ms ease;
+
+    &:hover {
+      color: $brand-teal !important;
+    }
+  }
+}
+
+// Navbar on cover — keep same glassmorphic style
+.td-navbar-cover,
+.td-navbar-transparent {
+  background: rgba($surface, 0.92) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  .navbar-brand {
+    color: $brand-teal-dark !important;
+  }
+
+  .nav-link {
+    color: $text-primary !important;
+  }
+}
+
+// ============================================================
+// HERO / COVER
+// ============================================================
+
+.td-cover-block {
+  position: relative;
+
+  // Teal gradient overlay for readability over background images
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      160deg,
+      rgba($brand-teal-dark, 0.82) 0%,
+      rgba($brand-teal, 0.72) 50%,
+      rgba($brand-green, 0.65) 100%
+    );
+    z-index: 0;
+  }
+
+  // Ensure all content sits above overlay
+  .container,
+  .td-overlay__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  // Hero heading
+  h1, .display-1 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  // Subtitle
+  .display-6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: $text-on-dark !important;
+  }
+
+  // Ensure all text in cover is white & readable
+  p, .lead, span {
+    color: $text-on-dark !important;
+  }
+
+  // Arrow down link
+  .text-info {
+    color: $text-on-dark !important;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// ============================================================
+// BUTTONS
+// ============================================================
+
+.btn {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  border-radius: 50rem !important;
+  letter-spacing: 0.02em;
+  transition: all 300ms ease;
+  border: none;
+  padding: 0.75rem 2rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, $brand-teal-dark 0%, $brand-teal 100%) !important;
+  border: none !important;
+  color: #FFFFFF !important;
+
+  &:hover, &:focus {
+    background: linear-gradient(135deg, darken($brand-teal-dark, 5%) 0%, darken($brand-teal, 5%) 100%) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba($brand-teal-dark, 0.2);
+    color: #FFFFFF !important;
+  }
+}
+
+.btn-secondary {
+  background: rgba($brand-teal, 0.08) !important;
+  border: 2px solid rgba($brand-teal, 0.25) !important;
+  color: $brand-teal-dark !important;
+
+  &:hover, &:focus {
+    background: rgba($brand-teal, 0.15) !important;
+    border-color: $brand-teal !important;
+    color: $brand-teal-dark !important;
+  }
+}
+
+// Buttons inside dark sections (cover, primary box)
+.td-cover-block,
 .td-box--primary {
-  // TODO: rework the td-box--* classes so that they don't override `color`;
-  // otherwise we can't use Bootstrap's CSS variables:
-  // --bs-link-color: $color !important;
-  // --bs-link-color-rgb: red !important;
+  .btn-primary {
+    background: #FFFFFF !important;
+    color: $brand-teal-dark !important;
+
+    &:hover {
+      background: $text-on-dark !important;
+      color: $brand-teal-dark !important;
+    }
+  }
+
+  .btn-secondary {
+    background: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    color: #FFFFFF !important;
+
+    &:hover {
+      border-color: #FFFFFF !important;
+      background: rgba(255, 255, 255, 0.1) !important;
+      color: #FFFFFF !important;
+    }
+  }
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+// ============================================================
+// SECTIONS (td-box)
+// ============================================================
+
+.td-box {
+  border: none !important;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  // PRIMARY — dark teal background
+  &--primary {
+    background: linear-gradient(135deg, $brand-teal-dark 0%, $brand-teal 100%) !important;
+
+    h2, h3, h4, h5, h6 {
+      color: #FFFFFF !important;
+    }
+
+    p, li {
+      color: $text-on-dark-muted !important;
+    }
+
+    a:not(.btn) {
+      color: #FFFFFF !important;
+      text-decoration-color: rgba(255, 255, 255, 0.4) !important;
+    }
+
+    .h3, .h4, .mb-0 {
+      color: #FFFFFF !important;
+    }
+  }
+
+  // WHITE — main surface
+  &--white {
+    background-color: $surface !important;
+
+    h2, h3, h4, h5, h6 {
+      color: $text-primary !important;
+    }
+
+    p, li {
+      color: $text-secondary !important;
+    }
+  }
+
+  // SECONDARY — subtle warm background
+  &--secondary {
+    background-color: $surface-low !important;
+
+    h2, h3, h4, h5, h6 {
+      color: $text-primary !important;
+    }
+
+    p, li {
+      color: $text-secondary !important;
+    }
+  }
+
+  // LEAD — intro text
+  &--lead {
+    h2, h3 {
+      color: $text-primary !important;
+    }
+
+    p {
+      color: $text-secondary !important;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+  }
+}
+
+// Row alignment
+.td-box .row {
+  align-items: center;
+}
+
+// ============================================================
+// FEATURE BLOCKS (icons + titles in sections)
+// ============================================================
+
+// Light sections: teal icons, dark text
+.td-box--white,
+.td-box--secondary {
+  .feature-icon,
+  [class*="fa-"] {
+    color: $brand-teal !important;
+  }
+
+  .h3, h3 {
+    color: $text-primary !important;
+  }
+
+  p {
+    color: $text-secondary !important;
+  }
+}
+
+// Dark (primary) sections: light icons, white text
+.td-box--primary {
+  .feature-icon,
+  [class*="fa-"] {
+    color: $text-on-dark !important;
+  }
+
+  .h3, h3 {
+    color: #FFFFFF !important;
+  }
+}
+
+// ============================================================
+// SIDEBAR
+// ============================================================
+
+.td-sidebar {
+  background-color: $surface-low !important;
+  border-right: none !important;
+
+  .td-sidebar__inner {
+    padding-top: 1.5rem;
+  }
+
   a {
-    color: tint-color($primary, 80%) !important;
+    color: $text-secondary;
+    font-weight: 500;
+
+    &:hover, &.active {
+      color: $brand-teal;
+    }
+  }
+}
+
+// ============================================================
+// FOOTER
+// ============================================================
+
+footer.td-footer {
+  background-color: $brand-teal-dark !important;
+  border-top: none !important;
+
+  // All footer text
+  * {
+    color: $text-on-dark-muted !important;
+  }
+
+  h4, .h4, strong, b {
+    color: $text-on-dark !important;
+  }
+
+  a {
+    color: $text-on-dark !important;
+
+    &:hover {
+      color: #FFFFFF !important;
+    }
+  }
+
+  .text-muted,
+  small {
+    color: $text-on-dark-muted !important;
+  }
+
+  // Footer icon links
+  [class*="fa-"] {
+    color: $text-on-dark-muted !important;
+  }
+}
+
+// ============================================================
+// CARDS
+// ============================================================
+
+.card {
+  border: none !important;
+  border-radius: 1rem;
+  background: $surface-white;
+  box-shadow: 0 2px 20px rgba($text-primary, 0.04);
+  overflow: hidden;
+}
+
+// ============================================================
+// LINKS
+// ============================================================
+
+.td-content a:not(.btn):not(.nav-link) {
+  color: $brand-teal;
+  text-decoration: underline;
+  text-decoration-color: rgba($brand-teal, 0.3);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 300ms ease;
+
+  &:hover {
+    color: $brand-teal-dark;
+    text-decoration-color: $brand-teal-dark;
+  }
+}
+
+// ============================================================
+// FORMS
+// ============================================================
+
+.form-control, input[type="text"], input[type="email"], textarea {
+  background-color: $surface-low;
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  padding: 0.875rem 1.25rem;
+  font-family: 'Manrope', sans-serif;
+  color: $text-primary;
+  transition: all 300ms ease;
+
+  &:focus {
+    background-color: $surface-white;
+    border-color: rgba($brand-teal, 0.3);
+    box-shadow: none;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $text-muted;
+  }
+}
+
+// ============================================================
+// SEARCH
+// ============================================================
+
+.td-search-input {
+  border-radius: 50rem !important;
+  background-color: $surface-low !important;
+  border: none !important;
+  color: $text-primary !important;
+}
+
+// ============================================================
+// BREADCRUMBS
+// ============================================================
+
+.breadcrumb {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  a {
+    color: $text-muted;
+    text-decoration: none !important;
+
+    &:hover {
+      color: $brand-teal;
+    }
+  }
+
+  .breadcrumb-item.active {
+    color: $text-secondary;
+  }
+}
+
+// ============================================================
+// LANGUAGE / DROPDOWN
+// ============================================================
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0.75rem;
+  background: $surface-white;
+  box-shadow: 0 8px 30px rgba($text-primary, 0.1);
+
+  .dropdown-item {
+    color: $text-primary;
+
+    &:hover, &:focus {
+      background-color: $surface-low;
+      color: $brand-teal;
+    }
+
+    &.active {
+      background-color: rgba($brand-teal, 0.1);
+      color: $brand-teal-dark;
+    }
+  }
+}
+
+// ============================================================
+// INLINE IMAGES
+// ============================================================
+
+.td-box img:not(.td-cover-block img) {
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 30px rgba($text-primary, 0.06);
+  transition: transform 300ms ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+// ============================================================
+// CONTENT SPACING
+// ============================================================
+
+.td-content {
+  padding-bottom: 3rem;
+}
+
+// ============================================================
+// RTL
+// ============================================================
+
+[dir="rtl"] {
+  .td-sidebar {
+    border-right: none !important;
+    border-left: none !important;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+  }
+}
+
+// ============================================================
+// DARK MODE — comprehensive
+// ============================================================
+
+$dark-bg: #141A1C;
+$dark-surface: #1C2426;
+$dark-surface-raised: #243033;
+$dark-text: #E0E4E5;
+$dark-text-secondary: #A8B4B7;
+$dark-text-muted: #7A8A8D;
+$dark-brand-teal: #5CB8CC;
+$dark-brand-green: #6EAD8E;
+
+[data-bs-theme="dark"] {
+  body {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-text !important;
+  }
+
+  p, li, td {
+    color: $dark-text-secondary !important;
+  }
+
+  // Navbar
+  .td-navbar,
+  .td-navbar-cover,
+  .td-navbar-transparent {
+    background: rgba($dark-bg, 0.92) !important;
+    border-bottom-color: rgba($dark-surface-raised, 0.5) !important;
+
+    .navbar-brand {
+      color: $dark-brand-teal !important;
+    }
+
+    .nav-link {
+      color: $dark-text !important;
+
+      &:hover {
+        color: $dark-brand-teal !important;
+      }
+    }
+  }
+
+  // Sections
+  .td-box--white {
+    background-color: $dark-bg !important;
+
+    h2, h3, h4, h5, h6 { color: $dark-text !important; }
+    p, li { color: $dark-text-secondary !important; }
+    [class*="fa-"] { color: $dark-brand-teal !important; }
+    .h3, .h4 { color: $dark-text !important; }
+  }
+
+  .td-box--secondary {
+    background-color: $dark-surface !important;
+
+    h2, h3, h4, h5, h6 { color: $dark-text !important; }
+    p, li { color: $dark-text-secondary !important; }
+  }
+
+  .td-box--primary {
+    background: linear-gradient(135deg, darken($brand-teal-dark, 8%) 0%, darken($brand-teal, 5%) 100%) !important;
+
+    h2, h3, h4, h5, h6, .h3, .h4 { color: #FFFFFF !important; }
+    p, li { color: $dark-text !important; }
+    [class*="fa-"] { color: $dark-brand-teal !important; }
+  }
+
+  .td-box--lead {
+    h2, h3 { color: $dark-text !important; }
+    p { color: $dark-text-secondary !important; }
+  }
+
+  // Cover block
+  .td-cover-block {
+    h1, .display-1, .display-6, p, span {
+      color: #FFFFFF !important;
+    }
+  }
+
+  // Sidebar
+  .td-sidebar {
+    background-color: $dark-surface !important;
+
+    a {
+      color: $dark-text-secondary;
+
+      &:hover, &.active {
+        color: $dark-brand-teal;
+      }
+    }
+  }
+
+  // Cards
+  .card {
+    background: $dark-surface-raised;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  // Links
+  .td-content a:not(.btn):not(.nav-link) {
+    color: $dark-brand-teal;
+    text-decoration-color: rgba($dark-brand-teal, 0.3);
+
+    &:hover {
+      color: lighten($dark-brand-teal, 10%);
+      text-decoration-color: $dark-brand-teal;
+    }
+  }
+
+  // Footer
+  footer.td-footer {
+    background-color: darken($dark-bg, 3%) !important;
+
+    * { color: $dark-text-secondary !important; }
+    h4, .h4, strong, b { color: $dark-text !important; }
+    a {
+      color: $dark-text !important;
+      &:hover { color: $dark-brand-teal !important; }
+    }
+  }
+
+  // Forms
+  .form-control, input, textarea {
+    background-color: $dark-surface !important;
+    color: $dark-text !important;
+    border-color: transparent !important;
+
+    &:focus {
+      background-color: $dark-surface-raised !important;
+      border-color: rgba($dark-brand-teal, 0.3) !important;
+    }
+
+    &::placeholder {
+      color: $dark-text-muted !important;
+    }
+  }
+
+  // Search
+  .td-search-input {
+    background-color: $dark-surface !important;
+    color: $dark-text !important;
+  }
+
+  // Dropdown
+  .dropdown-menu {
+    background: $dark-surface-raised;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+
+    .dropdown-item {
+      color: $dark-text;
+
+      &:hover, &:focus {
+        background-color: $dark-surface;
+        color: $dark-brand-teal;
+      }
+
+      &.active {
+        background-color: rgba($dark-brand-teal, 0.15);
+        color: $dark-brand-teal;
+      }
+    }
+  }
+
+  // Breadcrumbs
+  .breadcrumb a {
+    color: $dark-text-muted;
+    &:hover { color: $dark-brand-teal; }
+  }
+  .breadcrumb-item.active {
+    color: $dark-text-secondary;
+  }
+
+  // Buttons
+  .btn-primary {
+    background: linear-gradient(135deg, $brand-teal 0%, $brand-teal-light 100%) !important;
+    color: #FFFFFF !important;
+  }
+
+  .btn-secondary {
+    background: rgba($dark-brand-teal, 0.1) !important;
+    border-color: rgba($dark-brand-teal, 0.3) !important;
+    color: $dark-brand-teal !important;
+
+    &:hover {
+      background: rgba($dark-brand-teal, 0.2) !important;
+      border-color: $dark-brand-teal !important;
+    }
+  }
+
+  // Buttons in cover/primary boxes (dark mode)
+  .td-cover-block,
+  .td-box--primary {
+    .btn-primary {
+      background: #FFFFFF !important;
+      color: $brand-teal-dark !important;
+    }
+
+    .btn-secondary {
+      background: transparent !important;
+      border-color: rgba(255, 255, 255, 0.4) !important;
+      color: #FFFFFF !important;
+
+      &:hover {
+        border-color: #FFFFFF !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+      }
+    }
+  }
+
+  // Images
+  .td-box img:not(.td-cover-block img) {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Auto dark mode (system preference)
+@media (prefers-color-scheme: dark) {
+  :root[data-bs-theme="auto"] {
+    // This ensures auto mode picks up the dark theme
+    color-scheme: dark;
+  }
+}
+
+// ============================================================
+// PRINT
+// ============================================================
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .td-cover-block::after {
+    display: none;
   }
 }

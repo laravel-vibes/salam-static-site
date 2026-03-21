@@ -1,4 +1,49 @@
 /*
-Projects can override this file. For details, see:
-https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
+  Design System: "Dr Salam Jibrel Medical Center"
+  Colors derived from brand logo:
+    - Blue-teal arc: #4A8EA8
+    - Green text/figure: #3D7A5F
+  Combined with warm neutrals for premium medical feel.
 */
+
+// Typography — fonts loaded via layouts/partials/hooks/head-end.html
+$font-family-sans-serif: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$headings-font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+$font-family-base: $font-family-sans-serif;
+
+// Color palette — matched to brand logo
+$primary: #2E7D8C;        // Blue-teal from logo arc
+$secondary: #3D7A5F;      // Green from logo text/figure
+$success: #3D7A5F;
+$info: #D4EEF4;
+$warning: #E6C87D;
+$danger: #C44D4D;
+$light: #F5F2EC;
+$dark: #1E2A2D;
+
+// Surface colors
+$body-bg: #FAFAF7;
+$body-color: #1E2A2D;
+
+// Link colors
+$link-color: #236B78;
+$link-hover-color: #1A525D;
+
+// Border radius — soft, rounded, premium
+$border-radius: 0.75rem;
+$border-radius-sm: 0.5rem;
+$border-radius-lg: 1rem;
+$border-radius-pill: 50rem;
+
+// Spacing
+$spacer: 1rem;
+
+// Headings
+$headings-font-weight: 500;
+$headings-color: #1E2A2D;
+$headings-line-height: 1.2;
+
+// Docsy-specific overrides
+$td-enable-google-fonts: false;
+$td-sidebar-bg-color: #F0EDE7;
+$td-sidebar-text-color: #1E2A2D;
