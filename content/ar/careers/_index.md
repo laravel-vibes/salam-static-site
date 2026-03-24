@@ -23,7 +23,7 @@ menu: {main: {weight: 37}}
 
 <h2 class="text-center mb-4">قدّم الآن</h2>
 
-<form name="careers-ar" method="POST" data-netlify="true" enctype="multipart/form-data">
+<form name="careers-ar" method="POST" action="/ar/careers/thank-you/" data-netlify="true" enctype="multipart/form-data">
   <input type="hidden" name="form-name" value="careers-ar" />
 
   <div class="mb-3">
@@ -67,13 +67,13 @@ menu: {main: {weight: 37}}
   <div class="mb-4">
     <label for="resume" class="form-label fw-bold">تحميل السيرة الذاتية *</label>
     <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-    <div class="form-text">الصيغ المقبولة: PDF, DOC, DOCX (الحد الأقصى ١٠ ميجابايت)</div>
+    <div class="form-text">الصيغ المقبولة: PDF, DOC, DOCX (الحد الأقصى ٨ ميجابايت)</div>
   </div>
 
   <div class="mb-3">
     <label for="documents" class="form-label fw-bold">مستندات إضافية</label>
-    <input type="file" class="form-control" id="documents" name="documents" accept=".pdf,.doc,.docx,.jpg,.png" multiple>
-    <div class="form-text">شهادات أو تراخيص أو مستندات داعمة أخرى</div>
+    <input type="file" class="form-control" id="documents" name="documents" accept=".pdf,.doc,.docx,.jpg,.png">
+    <div class="form-text">شهادات أو تراخيص أو مستندات داعمة أخرى (الحد الأقصى ٨ ميجابايت)</div>
   </div>
 
   <div class="text-center mt-4">

@@ -23,7 +23,7 @@ We're always looking for talented and passionate professionals to join our team.
 
 <h2 class="text-center mb-4">Apply Now</h2>
 
-<form name="careers" method="POST" data-netlify="true" enctype="multipart/form-data">
+<form name="careers" method="POST" action="/careers/thank-you/" data-netlify="true" enctype="multipart/form-data">
   <input type="hidden" name="form-name" value="careers" />
 
   <div class="mb-3">
@@ -67,13 +67,13 @@ We're always looking for talented and passionate professionals to join our team.
   <div class="mb-4">
     <label for="resume" class="form-label fw-bold">Upload CV / Resume *</label>
     <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-    <div class="form-text">Accepted formats: PDF, DOC, DOCX (max 10 MB)</div>
+    <div class="form-text">Accepted formats: PDF, DOC, DOCX (max 8 MB)</div>
   </div>
 
   <div class="mb-3">
     <label for="documents" class="form-label fw-bold">Additional Documents</label>
-    <input type="file" class="form-control" id="documents" name="documents" accept=".pdf,.doc,.docx,.jpg,.png" multiple>
-    <div class="form-text">Certificates, licenses, or other supporting documents</div>
+    <input type="file" class="form-control" id="documents" name="documents" accept=".pdf,.doc,.docx,.jpg,.png">
+    <div class="form-text">Certificates, licenses, or other supporting documents (max 8 MB total)</div>
   </div>
 
   <div class="text-center mt-4">
