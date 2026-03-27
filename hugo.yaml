@@ -117,8 +117,8 @@ params:
 
   copyright:
     authors: Dr Salam Jibrel Medical Center
-    from_year: 2025
-    to_year: present
+    from_year: 2017
+    to_year: 2026
 
   # User interface configuration
   ui:
@@ -142,7 +142,9 @@ params:
     # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
     # add "hide_feedback: true" to the page's front matter.
     feedback:
-      enable: false
+      enable: true
+      yes: Glad to hear it! Please <a href="https://github.com/laravel-vibes/salam-static-site/issues/new">tell us how we can improve</a>.
+      no: Sorry to hear that. Please <a href="https://github.com/laravel-vibes/salam-static-site/issues/new">tell us how we can improve</a>.
 
     # Adds a reading time to the top of each doc.
     # If you want this feature, but occasionally need to remove the Reading time from a single page,
