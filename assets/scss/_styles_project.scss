@@ -804,6 +804,75 @@ $dark-brand-green: #6EAD8E;
 // PRINT
 // ============================================================
 
+// ============================================================
+// MOBILE RESPONSIVENESS
+// ============================================================
+
+// Responsive iframe embeds (YouTube, Maps)
+.td-content iframe,
+.td-box iframe {
+  max-width: 100%;
+}
+
+// Tablet (768px and below)
+@media (max-width: 768px) {
+  // Reduce excessive box padding
+  .td-box {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  // Heading sizes
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.2rem; }
+
+  // Form buttons
+  .btn-lg {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+// Mobile (576px and below)
+@media (max-width: 576px) {
+  // Further reduce box padding
+  .td-box {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  // Heading sizes
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+
+  // Ensure form inputs are large enough for touch
+  .form-control,
+  .form-select {
+    font-size: 1rem;
+    padding: 0.625rem 0.75rem;
+    min-height: 44px;
+  }
+
+  // Buttons full width on mobile
+  .btn-lg {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  // RTL list padding on mobile
+  [dir="rtl"] ul,
+  [dir="rtl"] ol,
+  [dir="rtl"] .td-content ul,
+  [dir="rtl"] .td-content ol {
+    padding-right: 1.25rem;
+  }
+}
+
+// ============================================================
+// PRINT
+// ============================================================
+
 @media print {
   body {
     background: white;
@@ -812,5 +881,10 @@ $dark-brand-green: #6EAD8E;
 
   .td-cover-block::after {
     display: none;
+  }
+
+  #fcw-widget,
+  #fsw-widget {
+    display: none !important;
   }
 }
