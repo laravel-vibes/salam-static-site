@@ -43,49 +43,16 @@ Kingdom of Bahrain
 
 {{% blocks/section color="light" %}}
 
-<div class="mx-auto" style="max-width: 700px;">
+<div class="mx-auto" style="max-width: 800px;">
 
 <h2 class="text-center mb-4">Send Us a Message</h2>
 
-<form name="contact" method="POST" action="{{ "contact/thank-you/" | relLangURL }}" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact" />
-
-  <div class="mb-3">
-    <label for="name" class="form-label fw-bold">Full Name *</label>
-    <input type="text" class="form-control" id="name" name="name" required>
-  </div>
-
-  <div class="mb-3">
-    <label for="email" class="form-label fw-bold">Email Address *</label>
-    <input type="email" class="form-control" id="email" name="email" required>
-  </div>
-
-  <div class="mb-3">
-    <label for="phone" class="form-label fw-bold">Phone Number</label>
-    <input type="tel" class="form-control" id="phone" name="phone">
-  </div>
-
-  <div class="mb-3">
-    <label for="subject" class="form-label fw-bold">Subject *</label>
-    <select class="form-select" id="subject" name="subject" required>
-      <option value="" disabled selected>Select a subject</option>
-      <option value="Book an Appointment">Book an Appointment</option>
-      <option value="General Inquiry">General Inquiry</option>
-      <option value="Insurance Question">Insurance Question</option>
-      <option value="Services Information">Services Information</option>
-      <option value="Other">Other</option>
-    </select>
-  </div>
-
-  <div class="mb-3">
-    <label for="message" class="form-label fw-bold">Message *</label>
-    <textarea class="form-control" id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-  </div>
-
-  <div class="text-center mt-4">
-    <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
-  </div>
-</form>
+<div style="position: relative; height: 80dvh; overflow: auto;">
+  <iframe
+    src="https://forms.salamivf.com/s/cmnjk367i0000vf012x55hiiw?embed=true"
+    frameborder="0" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
+</div>
 
 </div>
 
