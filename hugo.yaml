@@ -1,6 +1,11 @@
 baseURL: https://salamivf.com/
 title: Dr Salam Jibrel Medical Center
 
+# Google Analytics
+services:
+  googleAnalytics:
+    id: G-75623741
+
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom slugorcontentbasename
 
 # Language settings
@@ -94,6 +99,9 @@ outputs:
   section: [HTML, print, RSS]
 
 params:
+  # Google Tag Manager ID (get from tagmanager.google.com)
+  gtm_id: GTM-NN5F93P
+
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
     taxonomyCloud: [tags, categories]
