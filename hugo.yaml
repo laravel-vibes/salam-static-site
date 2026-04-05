@@ -99,6 +99,8 @@ outputs:
   section: [HTML, print, RSS]
 
 params:
+  # Google Analytics ID
+  ga_id: G-1XGJRQ376C
   # Google Tag Manager ID (get from tagmanager.google.com)
   gtm_id: GTM-NN5F93P
 
