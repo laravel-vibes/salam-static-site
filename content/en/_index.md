@@ -85,6 +85,37 @@ cutting-edge technology with a warm, supportive environment.
 
 {{% /blocks/section %}}
 
+{{% blocks/section color="light" type="row" %}}
+
+<div class="col-12">
+
+## Health Values
+
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="p-4 bg-white rounded shadow-sm h-100">
+<h4 class="text-primary mb-3">Our Mission</h4>
+<p>To provide world-class fertility care with cutting-edge technology and a compassionate approach, helping families achieve their dreams of parenthood.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="p-4 bg-white rounded shadow-sm h-100">
+<h4 class="text-primary mb-3">Our Vision</h4>
+<p>Our vision is that we strive to deliver the Gift of Life to you with a strong scientific approach, ethical values, and humane touch. We want to be "on your team" to celebrate life with you. Now and always.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="p-4 bg-white rounded shadow-sm h-100">
+<h4 class="text-primary mb-3">Our Promise</h4>
+<p>A comprehensive future healthcare plan that would benefit every patient who walks in to our center.</p>
+</div>
+</div>
+
+{{% /blocks/section %}}
+
 {{% blocks/section color="secondary" type="row" %}}
 
 <div class="col-md-6 text-center">

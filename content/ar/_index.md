@@ -83,6 +83,37 @@ params:
 
 {{% /blocks/section %}}
 
+{{% blocks/section color="light" type="row" %}}
+
+<div class="col-12">
+
+## قيمنا الصحية
+
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="p-4 bg-white rounded shadow-sm h-100">
+<h4 class="text-primary mb-3">مهمتنا</h4>
+<p>تقديم رعاية خصوبة عالمية المستوى بأحدث التقنيات ونهج إنساني، لمساعدة العائلات على تحقيق حلمهم بالأمومة والأبوة.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="p-4 bg-white rounded shadow-sm h-100">
+<h4 class="text-primary mb-3">رؤيتنا</h4>
+<p>رؤيتنا أن نسعى لتقديم هبة الحياة لكم بنهج علمي قوي وقيم أخلاقية ولمسة إنسانية. نريد أن نكون "في فريقكم" للاحتفال بالحياة معكم. الآن ودائماً.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="p-4 bg-white rounded shadow-sm h-100">
+<h4 class="text-primary mb-3">وعدنا</h4>
+<p>خطة رعاية صحية شاملة للمستقبل تعود بالفائدة على كل مريض يدخل مركزنا.</p>
+</div>
+</div>
+
+{{% /blocks/section %}}
+
 {{% blocks/section color="secondary" type="row" %}}
 
 <div class="col-md-6 text-center">

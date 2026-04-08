@@ -168,11 +168,11 @@ params:
   links:
     user:
       - name: Phone
-        url: 'tel:+97317000000'
+        url: 'tel:+97317701747'
         icon: fa fa-phone
         desc: Call us for appointments
       - name: Email
-        url: 'mailto:info@salamjibrel.com'
+        url: 'mailto:info@salamivf.com'
         icon: fa fa-envelope
         desc: Email us for inquiries
       - name: Location
@@ -185,7 +185,7 @@ params:
         icon: fab fa-instagram
         desc: Follow us on Instagram
       - name: WhatsApp
-        url: 'https://wa.me/97317000000'
+        url: 'https://wa.me/97337272771'
         icon: fab fa-whatsapp
         desc: Message us on WhatsApp
 

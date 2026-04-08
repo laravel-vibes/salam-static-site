@@ -8,14 +8,8 @@ We work with a wide range of insurance providers to make your healthcare experie
 
 ## Accepted Insurance Providers
 
-- Bupa
-- Gulf Insurance Group
-- Allianz
-- AXA
-- National Health Insurance Company (NHIC)
-- Arabia Insurance
-- Bahrain National Insurance
-- Solidarity (formerly T'azur)
+- MetLife
+- MedNet
 
 *Please contact us to confirm your specific plan's coverage.*
 
@@ -41,4 +35,4 @@ For patients without insurance or for services not covered by insurance, we offe
 
 ## Questions?
 
-Our team is happy to help you understand your coverage. Contact us at [info@salamjibrel.com](mailto:info@salamjibrel.com) or call [+973 1700 0000](tel:+97317000000).
+Our team is happy to help you understand your coverage. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747).
