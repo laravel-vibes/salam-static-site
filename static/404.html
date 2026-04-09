@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Dr Salam Jibrel Medical Center</title>
+  <link rel="icon" href="/favicons/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Manrope', system-ui, sans-serif;
+      background: linear-gradient(180deg, rgba(25, 135, 84, 0.05) 0%, #fff 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container {
+      text-align: center;
+      max-width: 600px;
+    }
+    .logo {
+      margin-bottom: 2rem;
+    }
+    .logo img {
+      height: 60px;
+    }
+    .icon {
+      font-size: 5rem;
+      color: #198754;
+      margin-bottom: 1rem;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    h1 {
+      font-size: 5rem;
+      font-weight: 800;
+      color: #198754;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn-primary {
+      background: #198754;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #146c43;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #198754;
+      border: 2px solid #198754;
+    }
+    .btn-outline:hover {
+      background: #198754;
+      color: white;
+      transform: translateY(-2px);
+    }
+    .help {
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .help a {
+      color: #198754;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .help a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 576px) {
+      h1 { font-size: 4rem; }
+      h2 { font-size: 1.25rem; }
+      .icon { font-size: 4rem; }
+      .buttons { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 280px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <a href="/">
+        <img src="/images/logo.png" alt="Dr Salam Jibrel Medical Center">
+      </a>
+    </div>
+
+    <div class="icon">
+      <i class="fas fa-baby"></i>
+    </div>
+
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <p>Don't worry, we're here to help you find your way back.</p>
+
+    <div class="buttons">
+      <a href="/en/" class="btn btn-primary">
+        <i class="fas fa-home"></i> Home
+      </a>
+      <a href="/en/services/" class="btn btn-outline">
+        <i class="fas fa-stethoscope"></i> Services
+      </a>
+      <a href="/en/contact/" class="btn btn-outline">
+        <i class="fas fa-envelope"></i> Contact Us
+      </a>
+    </div>
+
+    <p class="help">
+      Need help? Call us at <a href="tel:+97317701747">+973 1770 1747</a>
+    </p>
+  </div>
+</body>
+</html>

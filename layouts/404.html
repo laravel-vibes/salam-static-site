@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="td-content">
+  <div style="text-align: center; padding: 4rem 2rem; max-width: 600px; margin: 0 auto;">
+
+    <div style="font-size: 5rem; color: #198754; margin-bottom: 1rem;">
+      <i class="fas fa-baby"></i>
+    </div>
+
+    <h1 style="font-size: 5rem; font-weight: 800; color: #198754; margin: 0;">404</h1>
+
+    <h2 style="font-size: 1.5rem; margin: 1rem 0;">
+      {{ if eq .Lang "ar" }}
+        عذراً، الصفحة غير موجودة
+      {{ else }}
+        Page Not Found
+      {{ end }}
+    </h2>
+
+    <p style="color: #666; margin-bottom: 2rem;">
+      {{ if eq .Lang "ar" }}
+        لا تقلق، نحن هنا لمساعدتك في العودة.
+      {{ else }}
+        Don't worry, we're here to help you find your way back.
+      {{ end }}
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-bottom: 2rem;">
+      <a href="{{ .Site.Home.RelPermalink }}" class="btn btn-primary btn-lg" style="border-radius: 50px;">
+        <i class="fas fa-home me-2"></i>{{ if eq .Lang "ar" }}الرئيسية{{ else }}Home{{ end }}
+      </a>
+      <a href="{{ .Site.Home.RelPermalink }}services/" class="btn btn-outline-primary btn-lg" style="border-radius: 50px;">
+        <i class="fas fa-stethoscope me-2"></i>{{ if eq .Lang "ar" }}خدماتنا{{ else }}Services{{ end }}
+      </a>
+      <a href="{{ .Site.Home.RelPermalink }}contact/" class="btn btn-outline-primary btn-lg" style="border-radius: 50px;">
+        <i class="fas fa-envelope me-2"></i>{{ if eq .Lang "ar" }}تواصل معنا{{ else }}Contact Us{{ end }}
+      </a>
+    </div>
+
+    <p style="color: #666; font-size: 0.9rem; border-top: 1px solid #ddd; padding-top: 1.5rem;">
+      {{ if eq .Lang "ar" }}
+        هل تحتاج مساعدة؟ اتصل بنا على
+        <a href="tel:+97317701747" style="color: #198754; font-weight: 600;">١٧٤٧ ١٧٧٠ ٩٧٣+</a>
+      {{ else }}
+        Need help? Call us at
+        <a href="tel:+97317701747" style="color: #198754; font-weight: 600;">+973 1770 1747</a>
+      {{ end }}
+    </p>
+
+  </div>
+</div>
+{{ end }}
