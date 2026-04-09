@@ -22,8 +22,6 @@ IUI may be recommended for couples or individuals experiencing:
 - Mild male factor infertility (slightly low sperm count or motility)
 - Cervical factor infertility
 - Ovulation disorders (when used with ovulation-inducing medications)
-- Same-sex couples using donor sperm
-- Single women using donor sperm
 - Ejaculation or erection difficulties
 
 ## The IUI Process
