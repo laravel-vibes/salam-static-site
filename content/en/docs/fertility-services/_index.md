@@ -226,26 +226,153 @@ IVF is an assisted reproductive technology where eggs are collected from the ova
 
 ### IVF Protocols
 
-**Long protocol:**
-- Downregulation with GnRH agonist before stimulation
-- Traditional approach
-- Good for normal responders
+We offer various stimulation protocols tailored to your individual needs:
 
-**Short (antagonist) protocol:**
-- GnRH antagonist used during stimulation
-- Shorter treatment time
-- Lower risk of OHSS
-- Often used for poor responders or PCOS
+#### Long Agonist Protocol
 
-**Natural cycle IVF:**
-- No or minimal stimulation
-- Single egg collected
-- Lower success rates but gentler approach
+**How it works:**
+- GnRH agonist (e.g., Buserelin, Lupron) started in the luteal phase (day 21) of the previous cycle
+- Agonist "downregulates" the pituitary gland, preventing premature ovulation
+- Stimulation with gonadotropins begins once downregulation is confirmed
+- Continues until trigger injection
 
-**Mild stimulation IVF:**
-- Lower doses of medication
+**Best suited for:**
+- Normal ovarian responders
+- Women with regular cycles
+- When precise control of ovulation timing is needed
+
+**Advantages:**
+- Well-established protocol with predictable response
+- Good synchronisation of follicle development
+- Flexible scheduling
+
+**Duration:** Approximately 4-5 weeks
+
+---
+
+#### Short Agonist Protocol (Flare Protocol)
+
+**How it works:**
+- GnRH agonist started on day 1-2 of the cycle
+- Initial "flare" effect stimulates natural FSH release
+- Gonadotropins added shortly after
+- Uses the body's natural hormone surge
+
+**Best suited for:**
+- Poor ovarian responders
+- Women with low ovarian reserve
+- Older women
+
+**Advantages:**
+- Shorter treatment duration
+- May improve response in poor responders
+- Uses natural FSH boost
+
+---
+
+#### Antagonist Protocol
+
+**How it works:**
+- Stimulation with gonadotropins starts on day 2-3 of the cycle
+- GnRH antagonist (e.g., Cetrotide, Ganirelix) added when follicles reach 12-14mm
+- Antagonist prevents premature LH surge and ovulation
+- Continues until trigger injection
+
+**Best suited for:**
+- High responders (PCOS)
+- Women at risk of OHSS
+- Poor responders
+- Most patients in modern IVF
+
+**Advantages:**
+- Shorter treatment time (10-14 days)
+- Lower risk of ovarian hyperstimulation syndrome (OHSS)
+- More patient-friendly (fewer injections initially)
+- Can use GnRH agonist trigger (further reduces OHSS risk)
+
+**Duration:** Approximately 2-3 weeks
+
+---
+
+#### Natural Cycle IVF
+
+**How it works:**
+- No stimulation medications
+- Single egg develops naturally
+- Careful monitoring to catch ovulation
+
+**Best suited for:**
+- Women who cannot use hormonal stimulation
+- Those who prefer a natural approach
+- Repeated poor response to stimulation
+
+**Considerations:**
+- Lower success rates per cycle
+- Risk of cycle cancellation if egg is lost
+- May need multiple cycles
+
+---
+
+#### Mild Stimulation IVF
+
+**How it works:**
+- Lower doses of gonadotropins
+- May combine with oral medications (Clomid/Letrozole)
+- Aims for 3-6 eggs
+
+**Best suited for:**
+- Women concerned about OHSS
+- Those preferring a gentler approach
+- Cost-conscious patients
+
+**Advantages:**
 - Fewer eggs but potentially better quality
-- Reduced side effects and cost
+- Reduced side effects
+- Lower medication costs
+
+---
+
+### Time-Lapse Embryo Monitoring
+
+#### What Is Time-Lapse?
+
+Time-lapse technology uses a specialised incubator with a built-in camera that takes images of embryos every 10-20 minutes throughout their development. This creates a continuous video of embryo development without disturbing the culture environment.
+
+#### How Does It Work?
+
+- Embryos remain in a stable, undisturbed environment
+- Camera captures thousands of images over 5-6 days
+- Software analyses development patterns
+- Embryologists review detailed developmental history
+
+#### Benefits of Time-Lapse
+
+**Improved embryo selection:**
+- Identifies embryos with the best developmental potential
+- Detects abnormal development patterns not visible in standard assessment
+- Provides additional selection criteria beyond appearance
+
+**Undisturbed culture:**
+- Embryos stay in optimal conditions continuously
+- No need to remove embryos from incubator for daily checks
+- Stable temperature, humidity, and gas levels
+
+**Detailed information:**
+- Complete developmental timeline
+- Timing of cell divisions
+- Detection of abnormalities (multinucleation, reverse cleavage)
+- Better prediction of blastocyst development
+
+**Documentation:**
+- Video record of your embryos' development
+- Can be shared with you to show your embryos growing
+
+#### Who Benefits Most?
+
+- Patients with multiple good-quality embryos (helps select the best)
+- Previous failed cycles (may identify embryo quality issues)
+- Patients undergoing single embryo transfer
+- Those wanting additional reassurance about embryo selection
 
 ---
 
