@@ -9,12 +9,6 @@ params:
 <video autoplay muted loop playsinline class="hero-video-bg">
   <source src="/videos/intro.mp4" type="video/mp4">
 </video>
-<div class="hero-video-overlay"></div>
-<div class="container-fluid td-overlay td-overlay--dark h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative" style="z-index: 2;">
-<h1 class="display-1">مركز د. سلام جبريل الطبي</h1>
-<p class="display-6">مركز رائد للخصوبة وأطفال الأنابيب في مملكة البحرين</p>
-<a href="#td-block-1" class="td-arrow-down"><span class="fas fa-chevron-down" aria-hidden="true"></span></a>
-</div>
 </div>
 
 {{% blocks/section color="primary" type="row" %}}
