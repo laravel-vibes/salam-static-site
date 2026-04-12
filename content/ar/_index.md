@@ -14,10 +14,10 @@ params:
 <h1 class="display-1">مركز د. سلام جبريل الطبي</h1>
 <p class="display-6">مركز رائد للخصوبة وأطفال الأنابيب في مملكة البحرين</p>
 <div class="td-cta-buttons my-5">
-  <a class="btn btn-lg btn-primary" href="services/">
+  <a class="btn btn-lg btn-primary" href="/ar/services/">
     خدماتنا
   </a>
-  <a class="btn btn-lg btn-secondary" href="about/">
+  <a class="btn btn-lg btn-secondary" href="/ar/about/">
     من نحن
   </a>
 </div>
