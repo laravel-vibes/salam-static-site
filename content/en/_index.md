@@ -5,20 +5,15 @@ params:
   body_class: td-navbar-links-all-active
 ---
 
-<div class="td-cover-block td-cover--height-full td-below-navbar position-relative overflow-hidden">
+<div class="hero-video-container">
 <video autoplay muted loop playsinline class="hero-video-bg">
   <source src="/videos/intro.mp4" type="video/mp4">
 </video>
+<div class="hero-cta-bar text-center">
+<a class="btn btn-lg btn-light" href="/en/services/">Our Services</a>
+<a class="btn btn-lg btn-outline-light" href="/en/about/">About Us</a>
 </div>
-
-{{% blocks/section color="primary" type="row" %}}
-
-<div class="col-12 text-center">
-<a class="btn btn-lg btn-light me-3" href="/en/services/">Our Services</a>
-<a class="btn btn-lg btn-secondary" href="/en/about/">About Us</a>
 </div>
-
-{{% /blocks/section %}}
 
 {{% blocks/lead color="white" %}}
 
