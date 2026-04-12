@@ -13,7 +13,7 @@ menu: {main: {weight: 10}}
 
 {{% blocks/lead color="white" %}}
 
-تطور مركز د. سلام جبريل الطبي من رؤية للرعاية الحانية إلى أحد أكثر مراكز الخصوبة والصحة الإنجابية موثوقية في البحرين. على مدار سنوات، رافقنا العائلات في رحلتهم نحو الأمومة والأبوة، نحتفل بكل نجاح كأنه نجاحنا ونقدم الدعم الثابت في كل تحدٍ.
+تطور مركز د. سلام جبريل الطبي من رؤية للرعاية الحانية إلى أحد مراكز الخصوبة والصحة الإنجابية الموثوقة في البحرين. على مدار سنوات، رافقنا العائلات في رحلتهم نحو الأمومة والأبوة، نحتفل بكل نجاح كأنه نجاحنا ونقدم الدعم الثابت في كل تحدٍ.
 
 {{% /blocks/lead %}}
 
@@ -100,6 +100,7 @@ menu: {main: {weight: 10}}
 </div>
 
 <div class="col-lg-4 col-md-6 text-center mb-5">
+<div class="team-placeholder" style="border-radius: 1rem; width: 250px; height: 250px; background: linear-gradient(135deg, #e8e5df 0%, #dddad4 100%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,83,104,0.1);"><span style="font-size: 4rem; color: #a8b4b7;">👩‍⚕️</span></div>
 
 ### د. دينا بعاج
 **أخصائية أمراض النساء والتوليد**
@@ -119,6 +120,7 @@ menu: {main: {weight: 10}}
 </div>
 
 <div class="col-lg-4 col-md-6 text-center mb-5">
+<div class="team-placeholder" style="border-radius: 1rem; width: 250px; height: 250px; background: linear-gradient(135deg, #e8e5df 0%, #dddad4 100%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,83,104,0.1);"><span style="font-size: 4rem; color: #a8b4b7;">👨‍⚕️</span></div>
 
 ### د. فلكي
 **استشاري التخدير**

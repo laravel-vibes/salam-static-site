@@ -13,7 +13,7 @@ Where hope meets expertise, and every family's dream matters.
 
 {{% blocks/lead color="white" %}}
 
-Dr. Salam Jibrel Medical Center has grown from a vision of compassionate care into one of Bahrain's most trusted fertility and reproductive health centres. For years, we have walked alongside families on their journey to parenthood, celebrating every success as our own and providing unwavering support through every challenge.
+Dr. Salam Jibrel Medical Center has grown from a vision of compassionate care into one of Bahrain's trusted fertility and reproductive health centres. For years, we have walked alongside families on their journey to parenthood, celebrating every success as our own and providing unwavering support through every challenge.
 
 {{% /blocks/lead %}}
 
@@ -100,6 +100,7 @@ Founder and Medical Director of the centre, Dr. Salam Jibrel brings years of exp
 </div>
 
 <div class="col-lg-4 col-md-6 text-center mb-5">
+<div class="team-placeholder" style="border-radius: 1rem; width: 250px; height: 250px; background: linear-gradient(135deg, #e8e5df 0%, #dddad4 100%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,83,104,0.1);"><span style="font-size: 4rem; color: #a8b4b7;">👩‍⚕️</span></div>
 
 ### Dr Dina Baaj
 **Specialist Obstetrics & Gynaecology**
@@ -119,6 +120,7 @@ Dr. Ayman Habib specialises in fetal medicine, providing detailed pregnancy scan
 </div>
 
 <div class="col-lg-4 col-md-6 text-center mb-5">
+<div class="team-placeholder" style="border-radius: 1rem; width: 250px; height: 250px; background: linear-gradient(135deg, #e8e5df 0%, #dddad4 100%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,83,104,0.1);"><span style="font-size: 4rem; color: #a8b4b7;">👨‍⚕️</span></div>
 
 ### Dr Falaki
 **Anaesthesia Consultant**
