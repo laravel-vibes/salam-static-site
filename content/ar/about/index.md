@@ -31,7 +31,7 @@ menu: {main: {weight: 10}}
 
 </div>
 <div class="col-lg-6 text-center">
-<img src="/images/dr-salam-jibrel.png" alt="د. سلام جبريل" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+<img src="/images/dr-salam-jibrel-2.png" alt="د. سلام جبريل" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
 </div>
 
 {{% /blocks/section %}}

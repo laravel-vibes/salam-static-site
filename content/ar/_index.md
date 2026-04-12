@@ -5,27 +5,25 @@ params:
   body_class: td-navbar-links-all-active
 ---
 
-{{% blocks/cover
-  title="مركز د. سلام جبريل الطبي"
-  height="full td-below-navbar"
-  image_anchor="center"
-%}}
-
-مركز رائد للخصوبة وأطفال الأنابيب في مملكة البحرين
-{.display-6}
-
+<div class="td-cover-block td-cover--height-full td-below-navbar position-relative overflow-hidden">
+<video autoplay muted loop playsinline class="hero-video-bg">
+  <source src="/videos/intro.mp4" type="video/mp4">
+</video>
+<div class="hero-video-overlay"></div>
+<div class="container-fluid td-overlay td-overlay--dark h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative" style="z-index: 2;">
+<h1 class="display-1">مركز د. سلام جبريل الطبي</h1>
+<p class="display-6">مركز رائد للخصوبة وأطفال الأنابيب في مملكة البحرين</p>
 <div class="td-cta-buttons my-5">
-  <a {{% _param btn-lg primary %}} href="services/">
+  <a class="btn btn-lg btn-primary" href="services/">
     خدماتنا
   </a>
-  <a {{% _param btn-lg secondary %}} href="about/">
+  <a class="btn btn-lg btn-secondary" href="about/">
     من نحن
   </a>
 </div>
-
-{{% blocks/link-down color="info" %}}
-
-{{% /blocks/cover %}}
+<a href="#td-block-1" class="td-arrow-down"><span class="fas fa-chevron-down" aria-hidden="true"></span></a>
+</div>
+</div>
 
 {{% blocks/lead color="white" %}}
 
@@ -39,26 +37,29 @@ params:
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature title="أطفال الأنابيب والحقن المجهري" icon="fa-solid fa-baby" %}}
+<div class="col-lg-4 col-md-6 text-center mb-4">
 
-علاجات متقدمة للإخصاب في المختبر والحقن المجهري
-بنسب نجاح عالية.
+### أطفال الأنابيب والحقن المجهري
 
-{{% /blocks/feature %}}
+علاجات متقدمة للإخصاب في المختبر والحقن المجهري بنسب نجاح عالية.
 
-{{% blocks/feature title="تقييم الخصوبة" icon="fa-solid fa-stethoscope" %}}
+</div>
 
-تقييم شامل للخصوبة للرجال والنساء، بما في ذلك
-الفحوصات الهرمونية والتصوير التشخيصي.
+<div class="col-lg-4 col-md-6 text-center mb-4">
 
-{{% /blocks/feature %}}
+### تقييم الخصوبة
 
-{{% blocks/feature title="أمراض النساء والتوليد" icon="fa-solid fa-heart-pulse" %}}
+تقييم شامل للخصوبة للرجال والنساء، بما في ذلك الفحوصات الهرمونية والتصوير التشخيصي.
 
-مجموعة كاملة من خدمات أمراض النساء بما في ذلك الفحوصات
-الروتينية ورعاية الحمل والجراحة طفيفة التوغل.
+</div>
 
-{{% /blocks/feature %}}
+<div class="col-lg-4 col-md-6 text-center mb-4">
+
+### أمراض النساء والتوليد
+
+مجموعة كاملة من خدمات أمراض النساء بما في ذلك الفحوصات الروتينية ورعاية الحمل والجراحة طفيفة التوغل.
+
+</div>
 
 {{% /blocks/section %}}
 
@@ -79,6 +80,32 @@ params:
 </div>
 <div class="col-md-6 text-center">
 <img src="/images/happy-couple.jpg" alt="زوجان سعيدان" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+</div>
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="secondary" type="row" %}}
+
+<div class="col-12 text-center mb-4">
+
+## منشأتنا الترحيبية
+
+</div>
+
+<div class="col-md-6 col-lg-3 mb-4">
+<img src="/images/reception1.png" alt="الاستقبال" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+</div>
+
+<div class="col-md-6 col-lg-3 mb-4">
+<img src="/images/reception2.png" alt="منطقة الانتظار" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+</div>
+
+<div class="col-md-6 col-lg-3 mb-4">
+<img src="/images/reception3.png" alt="غرفة الاستشارة" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+</div>
+
+<div class="col-md-6 col-lg-3 mb-4">
+<img src="/images/reception4.png" alt="منشأتنا" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
 </div>
 
 {{% /blocks/section %}}

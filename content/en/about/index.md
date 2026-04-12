@@ -31,7 +31,7 @@ Today, we are proud to offer comprehensive fertility services, from initial cons
 
 </div>
 <div class="col-lg-6 text-center">
-<img src="/images/dr-salam-jibrel.png" alt="Dr Salam Jibrel" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+<img src="/images/dr-salam-jibrel-2.png" alt="Dr Salam Jibrel" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
 </div>
 
 {{% /blocks/section %}}

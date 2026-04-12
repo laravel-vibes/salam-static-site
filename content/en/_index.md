@@ -5,27 +5,25 @@ params:
   body_class: td-navbar-links-all-active
 ---
 
-{{% blocks/cover
-  title="Dr Salam Jibrel Medical Center"
-  height="full td-below-navbar"
-  image_anchor="center"
-%}}
-
-Leading Fertility & IVF Center in Bahrain
-{.display-6}
-
+<div class="td-cover-block td-cover--height-full td-below-navbar position-relative overflow-hidden">
+<video autoplay muted loop playsinline class="hero-video-bg">
+  <source src="/videos/intro.mp4" type="video/mp4">
+</video>
+<div class="hero-video-overlay"></div>
+<div class="container-fluid td-overlay td-overlay--dark h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative" style="z-index: 2;">
+<h1 class="display-1">Dr Salam Jibrel Medical Center</h1>
+<p class="display-6">Leading Fertility & IVF Center in Bahrain</p>
 <div class="td-cta-buttons my-5">
-  <a {{% _param btn-lg primary %}} href="services/">
+  <a class="btn btn-lg btn-primary" href="services/">
     Our Services
   </a>
-  <a {{% _param btn-lg secondary %}} href="about/">
+  <a class="btn btn-lg btn-secondary" href="about/">
     About Us
   </a>
 </div>
-
-{{% blocks/link-down color="info" %}}
-
-{{% /blocks/cover %}}
+<a href="#td-block-1" class="td-arrow-down"><span class="fas fa-chevron-down" aria-hidden="true"></span></a>
+</div>
+</div>
 
 {{% blocks/lead color="white" %}}
 
@@ -40,26 +38,29 @@ tailored to each patient's unique needs.
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature title="IVF & ICSI" icon="fa-solid fa-baby" %}}
+<div class="col-lg-4 col-md-6 text-center mb-4">
 
-Advanced In Vitro Fertilization and Intracytoplasmic Sperm Injection
-treatments with high success rates.
+### IVF & ICSI
 
-{{% /blocks/feature %}}
+Advanced In Vitro Fertilization and Intracytoplasmic Sperm Injection treatments with high success rates.
 
-{{% blocks/feature title="Fertility Assessment" icon="fa-solid fa-stethoscope" %}}
+</div>
 
-Comprehensive fertility evaluation for both men and women,
-including hormonal testing and diagnostic imaging.
+<div class="col-lg-4 col-md-6 text-center mb-4">
 
-{{% /blocks/feature %}}
+### Fertility Assessment
 
-{{% blocks/feature title="Gynecology" icon="fa-solid fa-heart-pulse" %}}
+Comprehensive fertility evaluation for both men and women, including hormonal testing and diagnostic imaging.
 
-Full range of gynecological services including routine check-ups,
-prenatal care, and minimally invasive surgery.
+</div>
 
-{{% /blocks/feature %}}
+<div class="col-lg-4 col-md-6 text-center mb-4">
+
+### Gynecology
+
+Full range of gynecological services including routine check-ups, prenatal care, and minimally invasive surgery.
+
+</div>
 
 {{% /blocks/section %}}
 
@@ -81,6 +82,32 @@ cutting-edge technology with a warm, supportive environment.
 </div>
 <div class="col-md-6 text-center">
 <img src="/images/happy-couple.jpg" alt="Happy couple" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+</div>
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="secondary" type="row" %}}
+
+<div class="col-12 text-center mb-4">
+
+## Our Welcoming Facility
+
+</div>
+
+<div class="col-md-6 col-lg-3 mb-4">
+<img src="/images/reception1.png" alt="Our Reception" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+</div>
+
+<div class="col-md-6 col-lg-3 mb-4">
+<img src="/images/reception2.png" alt="Waiting Area" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+</div>
+
+<div class="col-md-6 col-lg-3 mb-4">
+<img src="/images/reception3.png" alt="Consultation Room" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+</div>
+
+<div class="col-md-6 col-lg-3 mb-4">
+<img src="/images/reception4.png" alt="Our Facility" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
 </div>
 
 {{% /blocks/section %}}
