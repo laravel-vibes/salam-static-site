@@ -81,7 +81,7 @@ cutting-edge technology with a warm, supportive environment.
 
 </div>
 <div class="col-md-6 text-center">
-<img src="/images/happy-couple.jpg" alt="Happy couple" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+<img src="/images/couple.png" alt="Happy couple" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
 </div>
 
 {{% /blocks/section %}}
