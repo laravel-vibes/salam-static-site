@@ -560,6 +560,16 @@ footer.td-footer {
   margin-top: 3rem;
 }
 
+// Team headshots - black and white, color on hover
+.td-box img[style*="object-fit: cover"] {
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
 // ============================================================
 // RTL
 // ============================================================
@@ -574,6 +584,11 @@ footer.td-footer {
     float: right;
     padding-left: 0.5rem;
     padding-right: 0;
+  }
+
+  // Print entire section link - align right for RTL
+  .td-page-meta {
+    text-align: right;
   }
 }
 
