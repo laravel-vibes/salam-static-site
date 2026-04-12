@@ -9,6 +9,7 @@ params:
 <video autoplay muted loop playsinline class="hero-video-bg">
   <source src="/videos/intro.mp4" type="video/mp4">
 </video>
+<div class="hero-video-overlay"></div>
 <div class="hero-cta-bar text-center">
 <a class="btn btn-lg btn-light" href="/en/services/">Our Services</a>
 <a class="btn btn-lg btn-outline-light" href="/en/about/">About Us</a>
