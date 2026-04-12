@@ -13,13 +13,18 @@ params:
 <div class="container-fluid td-overlay td-overlay--dark h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative" style="z-index: 2;">
 <h1 class="display-1">Dr Salam Jibrel Medical Center</h1>
 <p class="display-6">Leading Fertility & IVF Center in Bahrain</p>
-<div class="td-cta-buttons my-5">
-<a class="btn btn-lg btn-primary" href="/en/services/">Our Services</a>
-<a class="btn btn-lg btn-secondary" href="/en/about/">About Us</a>
-</div>
 <a href="#td-block-1" class="td-arrow-down"><span class="fas fa-chevron-down" aria-hidden="true"></span></a>
 </div>
 </div>
+
+{{% blocks/section color="primary" type="row" %}}
+
+<div class="col-12 text-center">
+<a class="btn btn-lg btn-light me-3" href="/en/services/">Our Services</a>
+<a class="btn btn-lg btn-secondary" href="/en/about/">About Us</a>
+</div>
+
+{{% /blocks/section %}}
 
 {{% blocks/lead color="white" %}}
 

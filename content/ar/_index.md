@@ -13,13 +13,18 @@ params:
 <div class="container-fluid td-overlay td-overlay--dark h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative" style="z-index: 2;">
 <h1 class="display-1">مركز د. سلام جبريل الطبي</h1>
 <p class="display-6">مركز رائد للخصوبة وأطفال الأنابيب في مملكة البحرين</p>
-<div class="td-cta-buttons my-5">
-<a class="btn btn-lg btn-primary" href="/ar/services/">خدماتنا</a>
-<a class="btn btn-lg btn-secondary" href="/ar/about/">من نحن</a>
-</div>
 <a href="#td-block-1" class="td-arrow-down"><span class="fas fa-chevron-down" aria-hidden="true"></span></a>
 </div>
 </div>
+
+{{% blocks/section color="primary" type="row" %}}
+
+<div class="col-12 text-center">
+<a class="btn btn-lg btn-light me-3" href="/ar/services/">خدماتنا</a>
+<a class="btn btn-lg btn-secondary" href="/ar/about/">من نحن</a>
+</div>
+
+{{% /blocks/section %}}
 
 {{% blocks/lead color="white" %}}
 
