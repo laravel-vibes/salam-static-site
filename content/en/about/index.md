@@ -102,10 +102,10 @@ Founder and Medical Director of the centre, Dr. Salam Jibrel brings years of exp
 <div class="col-lg-4 col-md-6 text-center mb-5">
 <div class="team-placeholder" style="border-radius: 1rem; width: 250px; height: 250px; background: linear-gradient(135deg, #e8e5df 0%, #dddad4 100%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,83,104,0.1);"><span style="font-size: 4rem; color: #a8b4b7;">👩‍⚕️</span></div>
 
-### Dr Dina Baaj
+### Dr Dania Baaj
 **Specialist Obstetrics & Gynaecology**
 
-Dr. Dina Baaj provides expert care in obstetrics and gynaecology, supporting patients through pregnancy and women's health concerns with skill and compassion.
+Dr. Dania Baaj provides expert care in obstetrics and gynaecology, supporting patients through pregnancy and women's health concerns with skill and compassion.
 
 </div>
 
@@ -122,10 +122,10 @@ Dr. Ayman Habib specialises in fetal medicine, providing detailed pregnancy scan
 <div class="col-lg-4 col-md-6 text-center mb-5">
 <div class="team-placeholder" style="border-radius: 1rem; width: 250px; height: 250px; background: linear-gradient(135deg, #e8e5df 0%, #dddad4 100%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,83,104,0.1);"><span style="font-size: 4rem; color: #a8b4b7;">👨‍⚕️</span></div>
 
-### Dr Falaki
+### Dr Mohamed Al Falaki
 **Anaesthesia Consultant**
 
-Dr. Falaki ensures patient comfort and safety during procedures, bringing expertise in anaesthesia to support our surgical and fertility treatments.
+Dr. Mohamed Al Falaki ensures patient comfort and safety during procedures, bringing expertise in anaesthesia to support our surgical and fertility treatments.
 
 </div>
 
