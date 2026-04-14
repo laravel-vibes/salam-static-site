@@ -100,7 +100,7 @@ Founder and Medical Director of the centre, Dr. Salam Jibrel brings years of exp
 </div>
 
 <div class="col-lg-4 col-md-6 text-center mb-5">
-<img src="/images/dr-dania-baaj.png" alt="Dr Dania Baaj" style="border-radius: 1rem; width: 250px; height: 250px; object-fit: cover; object-position: top; box-shadow: 0 8px 30px rgba(0,83,104,0.1);" />
+<img src="/images/dr-dania-baaj.jpg" alt="Dr Dania Baaj" style="border-radius: 1rem; width: 250px; height: 250px; object-fit: cover; object-position: top; box-shadow: 0 8px 30px rgba(0,83,104,0.1);" />
 
 ### Dr Dania Baaj
 **Specialist Obstetrics & Gynaecology**
