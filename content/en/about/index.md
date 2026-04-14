@@ -100,7 +100,7 @@ Founder and Medical Director of the centre, Dr. Salam Jibrel brings years of exp
 </div>
 
 <div class="col-lg-4 col-md-6 text-center mb-5">
-<div class="team-placeholder" style="border-radius: 1rem; width: 250px; height: 250px; background: linear-gradient(135deg, #e8e5df 0%, #dddad4 100%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,83,104,0.1);"><span style="font-size: 4rem; color: #a8b4b7;">👩‍⚕️</span></div>
+<img src="/images/dr-dania-baaj.png" alt="Dr Dania Baaj" style="border-radius: 1rem; width: 250px; height: 250px; object-fit: cover; object-position: top; box-shadow: 0 8px 30px rgba(0,83,104,0.1);" />
 
 ### Dr Dania Baaj
 **Specialist Obstetrics & Gynaecology**
@@ -120,7 +120,7 @@ Dr. Ayman Habib specialises in fetal medicine, providing detailed pregnancy scan
 </div>
 
 <div class="col-lg-4 col-md-6 text-center mb-5">
-<div class="team-placeholder" style="border-radius: 1rem; width: 250px; height: 250px; background: linear-gradient(135deg, #e8e5df 0%, #dddad4 100%); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 8px 30px rgba(0,83,104,0.1);"><span style="font-size: 4rem; color: #a8b4b7;">👨‍⚕️</span></div>
+<img src="/images/dr-mohamed-alfalaki.png" alt="Dr Mohamed Al Falaki" style="border-radius: 1rem; width: 250px; height: 250px; object-fit: cover; object-position: top; box-shadow: 0 8px 30px rgba(0,83,104,0.1);" />
 
 ### Dr Mohamed Al Falaki
 **Anaesthesia Consultant**
