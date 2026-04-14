@@ -447,4 +447,4 @@ This depends on your specific condition and type of work. We can provide advice 
 
 ## Book a Consultation
 
-If you have risk factors for a high-risk pregnancy or have been told your pregnancy is high-risk, our specialist team is here to provide the care you need. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to schedule an appointment.
+If you have risk factors for a high-risk pregnancy or have been told your pregnancy is high-risk, our specialist team is here to provide the care you need. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to schedule an appointment.

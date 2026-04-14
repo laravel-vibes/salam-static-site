@@ -100,4 +100,4 @@ At Dr Salam Jibrel Medical Center, we believe in:
 
 ## Book an Appointment
 
-Whether you're continuing care from our early pregnancy services or joining us for antenatal care, we're here to support you. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to schedule your appointment.
+Whether you're continuing care from our early pregnancy services or joining us for antenatal care, we're here to support you. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to schedule your appointment.

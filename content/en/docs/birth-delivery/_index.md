@@ -183,4 +183,4 @@ We can help you choose the best option based on your individual circumstances an
 
 ## Book a Consultation
 
-If you're pregnant and would like to discuss your birth and delivery options, or if you'd like to transfer your care to us, we're here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to schedule an appointment.
+If you're pregnant and would like to discuss your birth and delivery options, or if you'd like to transfer your care to us, we're here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to schedule an appointment.

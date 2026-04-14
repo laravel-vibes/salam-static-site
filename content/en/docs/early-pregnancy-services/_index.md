@@ -77,4 +77,4 @@ Once you complete your first trimester, we'll ensure a smooth transition to ongo
 
 ## Book an Appointment
 
-If you've just discovered you're pregnant or need early pregnancy support, our team is ready to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to schedule your appointment.
+If you've just discovered you're pregnant or need early pregnancy support, our team is ready to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to schedule your appointment.

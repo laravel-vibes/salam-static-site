@@ -433,4 +433,4 @@ We can help you choose the best method based on your health, lifestyle, and pref
 
 ## Book a Consultation
 
-If you're experiencing any gynaecological symptoms or need routine screening, our team is here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to schedule an appointment.
+If you're experiencing any gynaecological symptoms or need routine screening, our team is here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to schedule an appointment.

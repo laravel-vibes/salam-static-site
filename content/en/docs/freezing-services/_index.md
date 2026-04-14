@@ -207,4 +207,4 @@ Yes. Samples can be transported to other facilities using specialised cryogenic 
 
 ## Book a Consultation
 
-If you're considering fertility preservation or would like to learn more about our freezing services, our team is here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to schedule a consultation.
+If you're considering fertility preservation or would like to learn more about our freezing services, our team is here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to schedule a consultation.

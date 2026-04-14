@@ -157,4 +157,4 @@ We offer genetic counselling to help you:
 
 ## Book a Consultation
 
-If you're interested in genetic testing or would like to learn more about your options, our team is here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to schedule a consultation.
+If you're interested in genetic testing or would like to learn more about your options, our team is here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to schedule a consultation.

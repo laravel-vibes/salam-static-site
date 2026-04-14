@@ -341,7 +341,7 @@ These twins share both placenta and amniotic sac, requiring the most intensive m
 ### How to Book
 
 Contact us to schedule your pregnancy scan:
-- Phone: [+973 1770 1747](tel:+97317701747)
+- Phone: [+973 1725 5095](tel:+97317255095)
 - Email: [info@salamivf.com](mailto:info@salamivf.com)
 
 ### What to Bring
@@ -402,4 +402,4 @@ In most cases, yes, at the 20-week scan. However, baby's position may make it di
 
 ## Book Your Pregnancy Scan
 
-Whether you need an early reassurance scan, your detailed anomaly scan, or specialist twin monitoring, our experienced team is here to provide expert care throughout your pregnancy. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to book your appointment.
+Whether you need an early reassurance scan, your detailed anomaly scan, or specialist twin monitoring, our experienced team is here to provide expert care throughout your pregnancy. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to book your appointment.

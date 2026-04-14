@@ -155,8 +155,8 @@ params:
     # add "hide_feedback: true" to the page's front matter.
     feedback:
       enable: true
-      yes: Glad to hear it! Please <a href="https://github.com/laravel-vibes/salam-static-site/issues/new">tell us how we can improve</a>.
-      no: Sorry to hear that. Please <a href="https://github.com/laravel-vibes/salam-static-site/issues/new">tell us how we can improve</a>.
+      yes: Glad to hear it!
+      no: Sorry to hear that.
 
     # Adds a reading time to the top of each doc.
     # If you want this feature, but occasionally need to remove the Reading time from a single page,
@@ -170,7 +170,7 @@ params:
   links:
     user:
       - name: Phone
-        url: 'tel:+97317701747'
+        url: 'tel:+97317255095'
         icon: fa fa-phone
         desc: Call us for appointments
       - name: Email

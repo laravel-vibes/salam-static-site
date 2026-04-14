@@ -435,4 +435,4 @@ Yes, in most cases. Hysteroscopy allows direct visualisation and targeted treatm
 
 ## Book a Consultation
 
-If you've been advised to have a hysteroscopy or would like to discuss whether it might help your symptoms, our team is here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1770 1747](tel:+97317701747) to schedule an appointment.
+If you've been advised to have a hysteroscopy or would like to discuss whether it might help your symptoms, our team is here to help. Contact us at [info@salamivf.com](mailto:info@salamivf.com) or call [+973 1725 5095](tel:+97317255095) to schedule an appointment.
