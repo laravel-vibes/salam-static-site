@@ -1,6 +1,6 @@
 ---
 title: Dr Salam Jibrel Medical Center
-description: Leading Fertility & IVF Center in Bahrain
+description: "Dr Salam Jibrel Medical Center is Bahrain's leading IVF and fertility clinic offering advanced reproductive treatments including IVF, ICSI, and comprehensive fertility assessments. Book your consultation today."
 params:
   body_class: td-navbar-links-all-active
 ---
@@ -18,7 +18,7 @@ params:
 
 {{% blocks/lead color="white" %}}
 
-## Welcome to Dr Salam Jibrel Medical Center
+# Welcome to Dr Salam Jibrel Medical Center
 
 We are a leading fertility and reproductive medicine center in the Kingdom of Bahrain,
 dedicated to helping families achieve their dreams of parenthood. With state-of-the-art
@@ -113,21 +113,21 @@ cutting-edge technology with a warm, supportive environment.
 
 <div class="col-md-4 mb-4">
 <div class="p-4 bg-white rounded shadow-sm h-100">
-<h4 class="text-primary mb-3">Our Mission</h4>
+<h3 class="text-primary mb-3">Our Mission</h3>
 <p>To provide world-class fertility care with cutting-edge technology and a compassionate approach, helping families achieve their dreams of parenthood.</p>
 </div>
 </div>
 
 <div class="col-md-4 mb-4">
 <div class="p-4 bg-white rounded shadow-sm h-100">
-<h4 class="text-primary mb-3">Our Vision</h4>
+<h3 class="text-primary mb-3">Our Vision</h3>
 <p>Our vision is that we strive to deliver the Gift of Life to you with a strong scientific approach, ethical values, and humane touch. We want to be "on your team" to celebrate life with you. Now and always.</p>
 </div>
 </div>
 
 <div class="col-md-4 mb-4">
 <div class="p-4 bg-white rounded shadow-sm h-100">
-<h4 class="text-primary mb-3">Our Promise</h4>
+<h3 class="text-primary mb-3">Our Promise</h3>
 <p>A comprehensive future healthcare plan that would benefit every patient who walks in to our center.</p>
 </div>
 </div>

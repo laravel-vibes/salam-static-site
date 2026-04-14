@@ -1,19 +1,87 @@
+{{/* SEO enhancements */}}
+
+{{/* Canonical URL */}}
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{/* Hreflang tags for multilingual SEO */}}
+{{ if .IsTranslated }}
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+{{ end }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}en/" />
+
+{{/* Structured Data - Organization & MedicalBusiness Schema */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "{{ .Site.BaseURL }}#organization",
+  "name": "Dr Salam Jibrel Medical Center",
+  "alternateName": "مركز د. سلام جبريل الطبي",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}images/logo.png",
+  "image": "{{ .Site.BaseURL }}images/reception1.png",
+  "description": "Leading fertility and IVF center in Bahrain offering advanced reproductive treatments including IVF, ICSI, and comprehensive fertility assessments.",
+  "medicalSpecialty": ["Reproductive Medicine", "Gynecology", "Fertility Treatment"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Building 1234, Road 4321, Block 432",
+    "addressLocality": "Manama",
+    "addressRegion": "Capital Governorate",
+    "postalCode": "00000",
+    "addressCountry": "BH"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 26.2235,
+    "longitude": 50.5876
+  },
+  "telephone": "+973 17 255095",
+  "email": "info@salamivf.com",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "14:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/salamivf/",
+    "https://www.instagram.com/salam.ivf/"
+  ],
+  "priceRange": "$$",
+  "currenciesAccepted": "BHD",
+  "paymentAccepted": "Cash, Credit Card, Insurance",
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Salam Jibrel",
+    "jobTitle": "Founder & Medical Director"
+  },
+  "availableService": [
+    {"@type": "MedicalProcedure", "name": "In Vitro Fertilization (IVF)"},
+    {"@type": "MedicalProcedure", "name": "Intracytoplasmic Sperm Injection (ICSI)"},
+    {"@type": "MedicalProcedure", "name": "Fertility Assessment"},
+    {"@type": "MedicalProcedure", "name": "Intrauterine Insemination (IUI)"}
+  ]
+}
+</script>
+{{ end }}
+
 <!-- PostHog Analytics (EU) -->
 {{ with .Site.Params.posthog_key }}
 <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('{{ . }}',{api_host:'https://eu.i.posthog.com', person_profiles: 'identified_only'})
-</script>
-{{ end }}
-
-<!-- Google tag (gtag.js) -->
-{{ with .Site.Params.ga_id }}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{ . }}');
 </script>
 {{ end }}
 
@@ -26,6 +94,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','{{ . }}');</script>
 {{ end }}
 <!-- End Google Tag Manager -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2337932736687449');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2337932736687449&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <!-- Matomo -->
 <script>

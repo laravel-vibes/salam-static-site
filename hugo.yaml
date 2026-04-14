@@ -1,11 +1,6 @@
 baseURL: https://salamivf.com/
 title: Dr Salam Jibrel Medical Center
 
-# Google Analytics
-services:
-  googleAnalytics:
-    id: G-1XGJRQ376C
-
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom slugorcontentbasename
 
 # Language settings
@@ -99,9 +94,8 @@ outputs:
   section: [HTML, print, RSS]
 
 params:
-  # Google Analytics ID
-  ga_id: G-1XGJRQ376C
   # Google Tag Manager ID (get from tagmanager.google.com)
+  # GA4 (G-1XGJRQ376C) is configured inside GTM, not here
   gtm_id: GTM-NN5F93P
   # PostHog Analytics (EU) - get your API key from eu.posthog.com
   posthog_key: "phc_yEbq9zjTsXzf74LRrLBKvS2RREEFpXmytN6RciNMKey7"
