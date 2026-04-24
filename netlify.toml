@@ -10,3 +10,127 @@ GO_VERSION = "1.22.2"
 
 [context.production]
 command = "npm run build:production"
+
+# Force www to non-www redirect
+[[redirects]]
+  from = "https://www.salamivf.com/*"
+  to = "https://salamivf.com/:splat"
+  status = 301
+  force = true
+
+# Redirect root to default language
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+
+# Old WordPress URL redirects (preserve SEO value)
+[[redirects]]
+  from = "/our-lab/"
+  to = "/en/about/"
+  status = 301
+
+[[redirects]]
+  from = "/our-lab"
+  to = "/en/about/"
+  status = 301
+
+[[redirects]]
+  from = "/doctors/"
+  to = "/en/about/"
+  status = 301
+
+[[redirects]]
+  from = "/doctors"
+  to = "/en/about/"
+  status = 301
+
+[[redirects]]
+  from = "/contactus/"
+  to = "/en/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/contactus"
+  to = "/en/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/about/"
+  to = "/en/about/"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/en/about/"
+  status = 301
+
+[[redirects]]
+  from = "/gynecology/"
+  to = "/en/docs/benign-gynaecology/"
+  status = 301
+
+[[redirects]]
+  from = "/gynecology"
+  to = "/en/docs/benign-gynaecology/"
+  status = 301
+
+[[redirects]]
+  from = "/goprocedures/"
+  to = "/en/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/goprocedures"
+  to = "/en/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/insemination-2/"
+  to = "/en/docs/fertility-services/"
+  status = 301
+
+[[redirects]]
+  from = "/insemination-2"
+  to = "/en/docs/fertility-services/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/"
+  to = "/en/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/articles"
+  to = "/en/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/ourteam/"
+  to = "/en/about/"
+  status = 301
+
+[[redirects]]
+  from = "/ourteam"
+  to = "/en/about/"
+  status = 301
+
+[[redirects]]
+  from = "/generalsurgery/"
+  to = "/en/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/generalsurgery"
+  to = "/en/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/endocrinology/"
+  to = "/en/docs/"
+  status = 301
+
+[[redirects]]
+  from = "/endocrinology"
+  to = "/en/docs/"
+  status = 301
