@@ -2,6 +2,9 @@
 title: Contact Us
 linkTitle: Contact
 menu: {main: {weight: 40}}
+aliases:
+  - /contactus/
+  - /contact-us/
 ---
 
 {{% blocks/cover title="Contact Us" height="auto" %}}

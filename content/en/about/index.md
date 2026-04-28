@@ -2,6 +2,11 @@
 title: About Us
 linkTitle: About
 menu: {main: {weight: 10}}
+aliases:
+  - /doctors/
+  - /ourteam/
+  - /team/
+  - /about-us/
 ---
 
 {{% blocks/cover title="About Dr Salam Jibrel Medical Center" height="auto" image_anchor="center" %}}

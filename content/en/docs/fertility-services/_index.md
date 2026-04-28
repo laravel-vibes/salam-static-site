@@ -2,6 +2,13 @@
 title: Fertility Services
 linkTitle: Fertility Services
 weight: 10
+aliases:
+  - /our-lab/
+  - /ivf-process/
+  - /whatisivf/
+  - /insemination-2/
+  - /ivf/
+  - /icsi/
 ---
 
 Our Fertility Services offer comprehensive diagnosis and treatment for couples and individuals struggling to conceive. With advanced reproductive technologies and personalised care, we help you achieve your dream of starting or growing your family.

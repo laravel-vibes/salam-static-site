@@ -2,6 +2,10 @@
 title: Benign Gynaecology Services
 linkTitle: Benign Gynaecology
 weight: 70
+aliases:
+  - /gynecology/
+  - /gynaecology/
+  - /goprocedures/
 ---
 
 Our Benign Gynaecology Services provide comprehensive care for a wide range of non-cancerous gynaecological conditions. From heavy periods and fibroids to cervical screening and preventive care, our experienced team is here to diagnose, treat, and support you through your gynaecological health journey.

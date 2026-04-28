@@ -2,6 +2,8 @@
 title: Our Services
 linkTitle: Services
 menu: {main: {weight: 20}}
+aliases:
+  - /our-services/
 ---
 
 {{% blocks/cover title="Our Services & Treatments" height="auto" %}}
