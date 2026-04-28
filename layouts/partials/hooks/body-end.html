@@ -43,20 +43,31 @@
   }
 </style>
 
-<!-- Chatwoot Live Chat Widget -->
+<!-- Chatwoot Live Chat Widget — deferred until first interaction or idle to reduce TBT -->
 <script>
-  window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
-  (function(d,t) {
-    var BASE_URL="https://chat.salamivf.com";
-    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=BASE_URL+"/packs/js/sdk.js";
-    g.async = true;
-    s.parentNode.insertBefore(g,s);
-    g.onload=function(){
-      window.chatwootSDK.run({
-        websiteToken: 'dYyXy79fNgbquJHVfoJE5gTj',
-        baseUrl: BASE_URL
-      })
-    }
-  })(document,"script");
+(function(){
+  var loaded = false;
+  function loadChatwoot(){
+    if (loaded) return;
+    loaded = true;
+    window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
+    (function(d,t){
+      var BASE_URL="https://chat.salamivf.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({ websiteToken: 'dYyXy79fNgbquJHVfoJE5gTj', baseUrl: BASE_URL });
+      };
+    })(document,"script");
+  }
+  var events = ['scroll','mousemove','touchstart','keydown','click'];
+  function once(){ events.forEach(function(e){ window.removeEventListener(e, once, {passive:true}); }); loadChatwoot(); }
+  events.forEach(function(e){ window.addEventListener(e, once, {passive:true, once:true}); });
+  window.addEventListener('load', function(){
+    var idle = window.requestIdleCallback || function(cb){ return setTimeout(cb, 2000); };
+    idle(function(){ setTimeout(loadChatwoot, 4000); });
+  });
+})();
 </script>

@@ -6,7 +6,8 @@ params:
 ---
 
 <div class="hero-video-container">
-<video autoplay muted loop playsinline class="hero-video-bg">
+<img src="/images/hero-mobile.webp" alt="" class="hero-mobile-poster" width="512" height="512" fetchpriority="high">
+<video autoplay muted loop playsinline preload="none" poster="/images/hero-mobile.webp" class="hero-video-bg">
   <source src="/videos/intro.mp4" type="video/mp4">
 </video>
 <div class="hero-video-overlay"></div>
@@ -72,7 +73,7 @@ cutting-edge technology with a warm, supportive environment.
 
 </div>
 <div class="col-md-6 text-center">
-<img src="/images/couple.png" alt="Happy couple" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+<img src="/images/couple.webp" alt="Happy couple" width="800" height="800" loading="lazy" decoding="async" style="border-radius: 1.5rem; max-width: 100%; height: auto; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
 </div>
 
 {{% /blocks/section %}}
@@ -86,19 +87,19 @@ cutting-edge technology with a warm, supportive environment.
 </div>
 
 <div class="col-md-6 col-lg-3 mb-4">
-<img src="/images/reception1.png" alt="Our Reception" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+<img src="/images/reception1.webp" alt="Our Reception" width="600" height="800" loading="lazy" decoding="async" style="border-radius: 1rem; width: 100%; height: auto; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
 </div>
 
 <div class="col-md-6 col-lg-3 mb-4">
-<img src="/images/reception2.png" alt="Waiting Area" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+<img src="/images/reception2.webp" alt="Waiting Area" width="600" height="800" loading="lazy" decoding="async" style="border-radius: 1rem; width: 100%; height: auto; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
 </div>
 
 <div class="col-md-6 col-lg-3 mb-4">
-<img src="/images/reception3.png" alt="Consultation Room" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+<img src="/images/reception3.webp" alt="Consultation Room" width="600" height="800" loading="lazy" decoding="async" style="border-radius: 1rem; width: 100%; height: auto; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
 </div>
 
 <div class="col-md-6 col-lg-3 mb-4">
-<img src="/images/reception4.png" alt="Our Facility" style="border-radius: 1rem; width: 100%; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
+<img src="/images/reception4.webp" alt="Our Facility" width="600" height="800" loading="lazy" decoding="async" style="border-radius: 1rem; width: 100%; height: auto; box-shadow: 0 8px 24px rgba(0,83,104,0.1);" />
 </div>
 
 {{% /blocks/section %}}
@@ -137,7 +138,7 @@ cutting-edge technology with a warm, supportive environment.
 {{% blocks/section color="secondary" type="row" %}}
 
 <div class="col-md-6 text-center">
-<img src="/images/mother-newborn.jpg" alt="Mother with newborn" style="border-radius: 1.5rem; max-width: 100%; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
+<img src="/images/mother-newborn.webp" alt="Mother with newborn" width="512" height="512" loading="lazy" decoding="async" style="border-radius: 1.5rem; max-width: 100%; height: auto; box-shadow: 0 12px 40px rgba(0,83,104,0.1);" />
 </div>
 <div class="col-md-6">
 
